@@ -1,0 +1,11 @@
+/* block myaccount */
+#left_column div.myaccount, #right_column div.myaccount { background:transparent }
+
+div.myaccount, div.myaccount a { color: #5d0630 }
+div.myaccount ul.bullet li { background-image: url('../../../img/bullet_myaccount.gif') }
+div.myaccount ul.bullet .icon { display: none }
+div.myaccount p.logout { padding: 0.3em 0 0.3em 2em }
+div.myaccount p.logout, div.myaccount p.logout a { color: #dd2a81 }
+div.myaccount p.logout a { text-decoration: underline }
+div.myaccount p.logout a:hover { text-decoration: none }
+.account_input { margin-left: 0; width: 15em }
