@@ -3,6 +3,18 @@ Template par défaut pour les outils du Parti Pirate
 Voir sur : http://partipirate.github.io/Bootstrap/
 
 
+# Installation
+
+Pour débuter un nouveau site à partir de celui-ci, il suffit d'avoir jekyll 
+d'installé (voir http://jekyllrb.com/docs/installation/) Il est compatible
+linux et windows mais windows n'est pas supporté officiellement.
+
+Ensuite c'est :
+* git clone git@github.com:PartiPirate/Bootstrap.git NouveauSite
+* cd NouveauSite
+Puis, au choix :
+* jekyll serve (pour lancer le site sur http://localhost:4000/)
+* jekyll build (pour générer le site dans le dossier /_site/)
 
 # Licence
 

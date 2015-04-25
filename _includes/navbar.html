@@ -1,0 +1,38 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Sommaire</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Parti Pirate" class="img-responsive hidden-xs" width="175" /></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li {% if page.url == "/index.html" %}class="active"{% endif %}><a href="index.html">Accueil</a></li>
+        <li {% if page.url == "/exemple.html" %}class="active"{% endif %}><a href="exemple.html">Exemple</a></li>
+        <li {% if page.url == "/licence.html" %}class="active"{% endif %}><a href="licence.html">Licence</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Divers <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://github.com/PartiPirate/Bootstrap">Github</a></li>
+            <li><a href="http://www.partipirate.org/">Site du Parti Pirate</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Communication</li>
+            <li class="divider"></li>
+            <li><a href="https://lists.partipirate.org/mailman/listinfo/stratcom">Equipe "stratcom"</a></li>
+            <li><a href="http://wiki.partipirate.org/Cat%C3%A9gorie:Bureau_National#Porte-parolat">Les Porte-paroles</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+    <div class="call-to-action">
+      <a class="fa fa-sign-in" href="https://adhesion.partipirate.org" title="Rejoignez le parti !"></a>
+      <a class="fa fa-eur" href="https://don.partipirate.org" title="Faites un don"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/PartiPirate" title="Suivez-nous sur twitter"></a>
+      <a class="fa fa-facebook" href="https://www.facebook.com/partipiratefr?fref=ts" title="Suivez-nous sur facebook"></a>
+    </div>
+  </div>
+</nav>
