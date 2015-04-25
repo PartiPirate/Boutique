@@ -1,0 +1,77 @@
+/*! 
+Mis en place par Mistral Oz
+*/
+body > .container {
+  margin-top: 75px;
+}
+.navbar a.navbar-brand img {
+    margin-top: -10px;
+}
+  .navbar a.navbar-brand:hover img {
+      opacity: 0.4;
+      filter: alpha(opacity=40); /* For IE8 and earlier */
+  }
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  padding-bottom: 21px;
+  border-bottom: 6px solid #8814CC;
+}
+.navbar > .container {
+  position:relative;
+}
+.navbar .call-to-action {
+  position:absolute;
+  top: 22px;
+  right: 22px;
+}
+  .navbar .call-to-action a {
+    border: 1px solid #AAA;
+    border-radius: 50%;
+    color: #CCC;
+    display: inline-block;
+    font-size: 17px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px 4px;
+    text-align: center;
+    width: 30px;
+    text-decoration: none;
+  }
+    .navbar .call-to-action a:hover,
+    .navbar .call-to-action a:active {
+      background-color: #8814CC;
+      color: #FFF !important;
+      border-color: transparent;
+    }
+
+footer.footer-page {
+  border-top:solid 1px #8814CC;
+  min-height: 20px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+  footer.footer-page > div{
+    width: 33%;
+    display: inline-block;
+  }
+    footer .footer-left {
+      line-height: 23px;
+    }
+    footer .footer-center {
+      text-align: center;
+      font-size: 17px;
+    }
+      footer .footer-center .go-back{
+        border: 1px solid #8814CC;
+        border-radius: 50%;
+        height: 27px;
+        width: 27px;
+        display: inline-block;
+      }
+    footer .footer-right {
+      text-align: right;
+      line-height: 23px;
+    }
