@@ -48,5 +48,8 @@
   {% if page.date %}
     <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
   {% endif %}
+  {% if site.data.params.facebook_publisher %}
+    <meta property="article:publisher" content="{{ site.data.params.facebook_publisher }}" />
+  {% endif %}
 </head>
 
