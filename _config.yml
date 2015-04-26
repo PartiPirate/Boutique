@@ -50,4 +50,4 @@ defaults: []
 # SASS
 sass:
   sass_dir: css
-  style: :compressed
+#  style: :compressed
