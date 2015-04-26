@@ -20,7 +20,6 @@
     <meta name="twitter:site" content="{{ site.data.params.twitter_account }}" />
   {% endif %}
   <meta property="og:title" content="{{ page.title | replace:'"':"'" }}" />
-  <meta property="og:type" content="{% if page.og_type %}{{ page.og_type }}{% else %}website{% endif %}" />
   <meta property="og:locale" content="fr_FR" />
   {% if page.description != empty %}
     <meta name="description" content="{{ page.description | replace:'"':"'" }}" />
@@ -45,11 +44,20 @@
   {% if site.data.params.siteName != empty %}
     <meta property="og:site_name" content="{{ site.data.params.siteName | replace:'"':"'" }}" />
   {% endif %}
-  {% if page.date %}
-    <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
-  {% endif %}
-  {% if site.data.params.facebook_publisher %}
-    <meta property="article:publisher" content="{{ site.data.params.facebook_publisher }}" />
+
+  {% if page.facebook_type == 'article' %}
+    <meta property="og:type" content="article" />
+    {% if page.date %}
+      <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
+    {% endif %}
+    {% if site.data.params.facebook_publisher %}
+      <meta property="article:publisher" content="{{ site.data.params.facebook_publisher }}" />
+    {% endif %}
+    {% if page.facebook_author %}
+      <meta property="article:author" content="{{ page.facebook_author }}" />
+    {% endif %}
+  {% else %}
+    <meta property="og:type" content="website" />
   {% endif %}
 </head>
 
