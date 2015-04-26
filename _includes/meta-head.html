@@ -32,7 +32,7 @@
   {% endif %}
   {% if site.data.params.url %}
     <meta property="og:url" content="{{ site.data.params.url }}{{ page.url | remove_first:'/' | remove_first:'index.html' }}" />
-    {% if page.og_image_url != empty %}<meta property="og:image" content="{{ site.data.params.url }}{{ page.og_image_url }}" />
+    {% if page.facebook_image_url != empty %}<meta property="og:image" content="{{ site.data.params.url }}{{ page.facebook_image_url }}" />
     {% elsif page.image_url != empty %}<meta property="og:image" content="{{ site.data.params.url }}{{ page.image_url }}" />
     {% elsif site.data.params.facebook_image != empty %}<meta property="og:image" content="{{ site.data.params.url }}{{ site.data.params.facebook_image }}" />
     {% endif %}
