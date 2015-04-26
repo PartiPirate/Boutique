@@ -1,11 +1,23 @@
 ---
 layout: default
-title: Boutique du Parti Pirate
+title: SpreadShirt - A inclure
 ---
 <div class="page-header">
-  <h1>Boutique</h1>
+  <h1>Dans le header</h1>
 </div>
-<p>Le <a href="https://www.partipirate.fr">Parti Pirate</a> mets à dispositions une boutique sur spreadshirt.fr afin de vous aider à obtenir des goodies pirates et à faire la promotion de notre parti. Vous pouvez aussi créer vous-même toute sorte de goodies à partir des sources SVG que nous mettons à votre disposition sur notre wiki (voir lien "<a href="diy.html">Do It Yourself</a>").</p>
+<p><a href="http://echoppe.spreadshirt.fr/">Boutique standard</a> : </p>
+<pre>{% highlight json %}{{ site | jsonify }}{% endhighlight %}</pre>
+<pre>{% highlight json %}{{ page | jsonify }}{% endhighlight %}</pre>
+<pre>{% highlight json %}{{ content | jsonify }}{% endhighlight %}</pre>
+
+
+
+{% highlight html %}
+	{% include navbar.html %}
+{% endhighlight %}
+<p><a href="http://partipirate.spreadshirt.fr">Boutique premium</a> : </p>
+<pre>
+</pre>
 
 <div class="page-header">
   <h1>Quelles sont les bénéfices ?</h1>
