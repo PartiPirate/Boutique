@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-    {% assign urlSplit = page.url|remove_first:'/'|remove_last:'/'|split:'/' %
+    {% assign urlSplit = page.url|remove_first:'/'|remove_last:'/'|split:'/' %}
     {% assign baseUrl = './' %}{% for item in urlSplit offset:1 %}{% assign baseUrl = '../'|prepend:baseUrl %}{% endfor %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
