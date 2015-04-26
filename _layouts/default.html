@@ -1,5 +1,5 @@
-{% assign urlSplit = page.url|remove_first:'/'|remove_last:'/'|split:'/' %}{% assign baseUrl = '' %}{% for item in urlSplit offset:1 %}{% assign baseUrl = '../'|prepend:baseUrl %}{% endfor %}{% include meta-head.html baseUrl=baseUrl %}
-  <body role="document">
+{% assign urlSplit = page.url|remove_first:'/'|remove_last:'/'|split:'/' %}{% assign baseUrl = './' %}{% for item in urlSplit offset:1 %}{% assign baseUrl = '../'|prepend:baseUrl %}{% endfor %}{% include meta-head.html baseUrl=baseUrl %}
+  <body>
 
     {% include navbar.html baseUrl=baseUrl %}
     
