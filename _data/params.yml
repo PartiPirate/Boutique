@@ -1,2 +1,13 @@
+# Mettre ici le nom du site (court)
+siteName: "Bootstrap Parti Pirate"
+# Mettre à true pour la production
 is_production: false
-url: toto
+# Mettre l'url complète du site de production et finir par un /. ie: https://www.partipirate.org/
+url: http://partipirate.github.io/Bootstrap/
+# Réseaux sociaux
+## compte twitter associé
+twitter_account: "@PartiPirate"
+## path relatif de l'image par défaut pour twitter
+twitter_image: "img/twitter_meta.png"
+## path relatif de l'image par défaut pour facebook
+facebook_image: "img/facebook_meta.png"
