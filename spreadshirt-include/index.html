@@ -6,16 +6,9 @@ title: SpreadShirt - A inclure
   <h1>Dans le header</h1>
 </div>
 <p><a href="http://echoppe.spreadshirt.fr/">Boutique standard</a> : </p>
-<pre>{% highlight json %}{{ site | jsonify }}{% endhighlight %}</pre>
-<pre>{% highlight json %}{{ page | jsonify }}{% endhighlight %}</pre>
-<pre>{% highlight json %}{{ content | jsonify }}{% endhighlight %}</pre>
-
-
-
-{% highlight html %}
-	{% include navbar.html %}
-{% endhighlight %}
+<pre>{% highlight html %}{% include navbar.html baseUrl="https://boutique.partipirate.org/" page="spreadshirt-echoppe" %}{% endhighlight %}</pre>
 <p><a href="http://partipirate.spreadshirt.fr">Boutique premium</a> : </p>
+<pre>{% highlight html %}{% include navbar.html baseUrl="https://boutique.partipirate.org/" page="spreadshirt-partipirate" %}{% endhighlight %}</pre>
 <pre>
 </pre>
 
