@@ -9,7 +9,7 @@ collections: null
 # Handling Reading
 safe:         false
 include:      [".htaccess"]
-exclude:      ["_documentation", "README.md"]
+exclude:      ["_documentation", "README.md", 'LICENCE']
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -26,14 +26,14 @@ gems:      []
 
 # Conversion
 markdown:    kramdown
-highlighter: rouge
+highlighter: pygments
 lsi:         false
 excerpt_separator: "\n\n"
 
 # Serving
 detach:  false
 port:    4000
-host:    127.0.0.1
+host:    "127.0.0.1"
 baseurl: "" # does not include hostname
 
 # Backwards-compatibility
@@ -50,4 +50,4 @@ defaults: []
 # SASS
 sass:
   sass_dir: css
-  style: :compressed
+#  style: :compressed

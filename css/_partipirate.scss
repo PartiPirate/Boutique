@@ -1,6 +1,24 @@
-/*! 
-Mis en place par Mistral Oz
+/*
+    Copyright 2015 Mistral Oz, Parti Pirate
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights to
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+    the Software, and to permit persons to whom the Software is furnished to do so,
+    subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all 
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
+    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
+
 body > .container {
   margin-top: 75px;
 }
@@ -11,13 +29,25 @@ body > .container {
       opacity: 0.4;
       filter: alpha(opacity=40); /* For IE8 and earlier */
   }
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus,
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  padding-bottom: 21px;
-  border-bottom: 6px solid #8814CC;
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus,
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    padding-bottom: 21px;
+    border-bottom: 6px solid #8814CC;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus,
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #8814CC;
+  }
 }
 .navbar > .container {
   position:relative;
@@ -43,26 +73,53 @@ body > .container {
     .navbar .call-to-action a:hover,
     .navbar .call-to-action a:active {
       background-color: #8814CC;
-      color: #FFF !important;
+      color: #FFF;
       border-color: transparent;
     }
+  @media (max-width: 768px) {
+    .navbar .call-to-action {
+      right: 70px;
+    }
+  }
+  @media (max-width: 435px) {
+    .navbar .call-to-action {
+      top: 47px;
+      left: 56px;
+    }
+      .navbar .call-to-action a{
+        border: 0 none;
+        font-size: 15px;
+        height: 12px;
+        width: 12px;
+      }
+        .navbar .call-to-action a:hover,
+        .navbar .call-to-action a:active {
+          background-color: transparent;
+          color: #8814CC;
+        }
+  }
 
 footer.footer-page {
   border-top:solid 1px #8814CC;
   min-height: 20px;
   padding-top:20px;
   padding-bottom:20px;
+  position: relative;
 }
   footer.footer-page > div{
-    width: 33%;
+    width: 32%;
     display: inline-block;
+    position: absolute;
+    top:0;
   }
     footer .footer-left {
       line-height: 23px;
+      left:0;
     }
     footer .footer-center {
       text-align: center;
       font-size: 17px;
+      margin: 10px 33%;
     }
       footer .footer-center .go-back{
         border: 1px solid #8814CC;
@@ -74,4 +131,17 @@ footer.footer-page {
     footer .footer-right {
       text-align: right;
       line-height: 23px;
+      right:0;
     }
+  @media (max-width: 768px) {
+    footer.footer-page {
+      font-size: .8em;
+    }
+      footer.footer-page i.fa{
+        font-size: 0.7em;
+      }
+      footer .footer-center .go-back{
+        border: 0px none;
+        width: 10px;
+      }
+  }

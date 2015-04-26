@@ -7,23 +7,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Parti Pirate" class="img-responsive hidden-xs" width="175" /></a>
+      <a class="navbar-brand" href="index.html"><img src="{{ include.baseUrl }}img/logo.png" alt="Parti Pirate" class="img-responsive" width="175" /></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li {% if page.url == "/index.html" %}class="active"{% endif %}><a href="index.html">Accueil</a></li>
-        <li {% if page.url == "/exemple.html" %}class="active"{% endif %}><a href="exemple.html">Exemple</a></li>
-        <li {% if page.url == "/licence.html" %}class="active"{% endif %}><a href="licence.html">Licence</a></li>
+        <li {% if page.url == "/index.html" %}class="active"{% endif %}><a href="{{ include.baseUrl }}index.html">Accueil</a></li>
+        <li {% if include.page == "spreadshirt-echoppe" %}class="active"{% endif %}><a href="https://echoppe.spreadshirt.fr">Boutique</a></li>
+        <li {% if include.page == "spreadshirt-partipirate" %}class="active"{% endif %}><a href="https://partipirate.spreadshirt.fr/">Produits à personnaliser</a></li>
+        <li {% if page.url == "/diy.html" %}class="active"{% endif %}><a href="{{ include.baseUrl }}diy.html">Do It Yourself</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Divers <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="https://github.com/PartiPirate/Bootstrap">Github</a></li>
-            <li><a href="http://www.partipirate.org/">Site du Parti Pirate</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Communication</li>
-            <li class="divider"></li>
-            <li><a href="https://lists.partipirate.org/mailman/listinfo/stratcom">Equipe "stratcom"</a></li>
-            <li><a href="http://wiki.partipirate.org/Cat%C3%A9gorie:Bureau_National#Porte-parolat">Les Porte-paroles</a></li>
+            <li><a href="https://www.partipirate.fr">Site du Parti Pirate</a></li>
+            <li><a href="https://github.com/PartiPirate/Boutique/issues">Remonter un bug</a></li>
+            <li {% if page.url == "/licence.html" %}class="active"{% endif %}><a href="{{ include.baseUrl }}licence.html">Licence</a></li>
           </ul>
         </li>
       </ul>
