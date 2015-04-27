@@ -1,6 +1,6 @@
 # Where things are
 source:      .
-destination: ./_site
+destination: ./htdocs
 plugins:     ./_plugins
 layouts:     ./_layouts
 data_source: ./_data
