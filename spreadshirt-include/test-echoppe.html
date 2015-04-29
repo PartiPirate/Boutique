@@ -1,0 +1,2378 @@
+---
+layout: none
+---
+{% capture head %}{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-echoppe" premium=0 %}{% endcapture %}
+{{ head | replace_first:'<head>','<head><title>(TEST) L&eacute;choppe du Parti Pirate</title><meta http-equiv="content-type" content="text/xhtml; charset=utf-8" /><base href="https://echoppe.spreadshirt.fr/" /><link rel="stylesheet" href="https://image.spreadshirtmedia.net/Public/Shop/Styles-packaged/shop_common_38e224e8c0acb4041454af228df9da60.css" type="text/css" media="screen" /><script type="text/javascript" src="https://image.spreadshirtmedia.net/Public/Shop/Js-packaged/shop_d84800b2b013d37fe33b22331ebdcfc0.js"></script><script type="text/javascript">var AjaxUrl = "https://echoppe.spreadshirt.fr/fr/FR/Ajax/";var AjaxShopIdentifier = "echoppe";var switchingColors = false;</script><!--[if lt IE 7]><script type="text/javascript" src="https://image.spreadshirtmedia.net/Public/Shop/Js/transparencyFix.js"></script><![endif]-->' }}
+
+
+<!-- Inclure ici tout ce qu'il y a en dessous (attention au footer) -->
+
+<meta name="viewport" content="width=device-width" />
+<script type="text/javascript">
+//<![CDATA[
+(function () {
+var isSmartphone = function () {
+try {
+return (navigator.userAgent.search(/mobile/i) >= 0
+&& (window.matchMedia && window.matchMedia('(max-width: 640px)').matches
+|| window.screen.width < 766));
+} catch (e) {
+return false;
+}
+};
+if (location.search.indexOf("mobile=") !== -1 || isSmartphone()) {
+if (document.cookie.search(/marketplaceDevice=desktop/) < 0) {
+window.location.href = '//shop.spreadshirt.fr/echoppe/?locale=fr_FR';
+}
+}
+}());
+//]]>
+</script><noscript><p class="message pending nojs">Cette page nécessite l'activation de Javascript.</p></noscript>
+
+<div id="main" class="container checkout2">
+<div id="headerUserInformation" style="visibility: hidden">
+<ul class="left">
+<li id="userDisable"><strong>Bienvenue.&nbsp;</strong><a href="https://echoppe.spreadshirt.fr/shop/logon" title="Se connecter à la boutique.">Se connecter à la boutique.</a></li>
+<li id="userEnable" style="display: none;"><strong>Bonjour&nbsp;<span id="userName"></span></strong></li>
+<li id="userLogout" style="display: none;"><a href="http://echoppe.spreadshirt.fr/shop/logout" title="Déconnexion">Déconnexion</a></li>
+<li id="userChart">
+<a href="https://echoppe.spreadshirt.fr/shop/basket" class="bntBasket" title="Panier">Panier</a>
+<strong>&nbsp;(<span id="shopBasketCount">0</span>&nbsp;article (s)&nbsp;:&nbsp;<span id="shopBasketPrice"></span>)</strong>
+</li>
+</ul>
+<ul class="right">
+<li id="userHelp"><a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show', '', 'width=680, height=700, scrollbars=1');" title="Aide">
+Aide</a>
+</li>
+
+<li id="sslWrapper">
+<div id="ssl">
+<a href="javascript:popUp('https://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/9#jumpto44', 'SSL', 'width=868, height=560,top=150,left=450,scrollbars=1');" title="SSL fermé">SSL fermé</a>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="banner"><a href="http://www.partipirate.fr"><img src="https://image.spreadshirtmedia.net/users/6994000/6993199/812349/img/812349_20150424083333.png" alt="" /></a></div>
+
+
+<div id="shopInformation">
+<h1>L'Echoppe du Parti Pirate&nbsp;</h1>
+<p>L'Echoppe du Parti Pirate.
+&nbsp;</p>
+</div>
+<ul id="menu">
+<li id="menuItemShop" class="current">
+<a href="http://echoppe.spreadshirt.fr/" title="Boutique">Boutique</a>
+</li><li id="menuItemDesigns" class="none">
+<a href="http://echoppe.spreadshirt.fr/shop/designs" title="Motifs">Motifs</a>
+</li><li id="menuItemBasket" class="none">
+<a href="https://echoppe.spreadshirt.fr/shop/basket" title="Panier">Panier</a>
+</li><li id="menuItemHelp" class="none">
+<a href="http://echoppe.spreadshirt.fr/shop/help" title="Aide">Aide</a>
+</li>
+
+</ul>
+
+<div id="content">
+<div id="cookieErrorMessage" style="display: none;">
+<br class="clearfix"/>
+<br/>
+<p class="message error">
+<a href="#">Cette boutique a besoin de cookies pour fonctionner correctement. Activer les cookies.</a>
+
+</p>
+</div>
+<div id="cookieSuccessMessage" style="display: none;">
+<br class="clearfix"/>
+<br/>
+<p class="message success">
+Les options ont bien été modifiées. Bon shopping !
+
+</p>
+</div>
+<script type="text/javascript">
+(function ($) {
+if (!document.cookie) {
+var $cookieErrorMessage = $('cookieErrorMessage'),
+links = $cookieErrorMessage.select('a'),
+$cookieErrorMessageLink,
+$cookieSuccessMessage = $('cookieSuccessMessage');
+if(links.length) {
+$cookieErrorMessageLink = links.pop();
+} else {
+$cookieErrorMessageLink = $cookieErrorMessage;
+}
+$cookieErrorMessage.show();
+$cookieErrorMessageLink.observe('click', function (e) {
+e.preventDefault && e.preventDefault();
+var cookieWindow = window.open("/shop/cookie?Popup=Show", "Cookies", "width=300,height=400,left=100,top=200");
+cookieWindow.focus();
+cookieWindow.handleSuccess = function(){
+cookieWindow.close();
+$cookieErrorMessage.hide();
+$cookieSuccessMessage.show();
+};
+return false;
+});
+}
+})($);
+</script><div id="articleList">
+	<script type="text/javascript" src="/Public/Shop/Js/carousel.js"></script>
+	<script type="text/javascript">
+var filterUrls = [];
+filterUrls[0]  = [];filterUrls[0][0]  = [];filterUrls[0][0][0]  = [];filterUrls[0][0][0][0]  = 'http://echoppe.spreadshirt.fr/';filterUrls[0][1]  = [];filterUrls[0][1][0]  = [];filterUrls[0][1][0][0]  = 'http://echoppe.spreadshirt.fr/hommes-D1';filterUrls[0][3]  = [];filterUrls[0][3][0]  = [];filterUrls[0][3][0][0]  = 'http://echoppe.spreadshirt.fr/femmes-D3';filterUrls[0][5]  = [];filterUrls[0][5][0]  = [];filterUrls[0][5][0][0]  = 'http://echoppe.spreadshirt.fr/accessoires-D5';filterUrls[0][19]  = [];filterUrls[0][19][0]  = [];filterUrls[0][19][0][0]  = 'http://echoppe.spreadshirt.fr/coques-D19';filterUrls[318445]  = [];filterUrls[318445][0]  = [];filterUrls[318445][0][0]  = [];filterUrls[318445][0][0][0]  = 'http://echoppe.spreadshirt.fr/parti-pirate-C318445';filterUrls[318413]  = [];filterUrls[318413][0]  = [];filterUrls[318413][0][0]  = [];filterUrls[318413][0][0][0]  = 'http://echoppe.spreadshirt.fr/midi-pyrenees-C318413';filterUrls[318421]  = [];filterUrls[318421][0]  = [];filterUrls[318421][0][0]  = [];filterUrls[318421][0][0][0]  = 'http://echoppe.spreadshirt.fr/so-pirate-C318421';filterUrls[318441]  = [];filterUrls[318441][0]  = [];filterUrls[318441][0][0]  = [];filterUrls[318441][0][0][0]  = 'http://echoppe.spreadshirt.fr/pirates-C318441';
+function filterUrl(category, department, producttypeCategory, producttype){
+return filterUrls[category][department][producttypeCategory][producttype];
+}
+</script>
+<form id="frmFilter" action="http://echoppe.spreadshirt.fr/" method="post">
+<input type="hidden" id="filterSearch" name="search" value="0" />
+<input type="hidden" id="filterDesignId" name="design" value="0" />
+<input type="hidden" id="filterConfigurable" name="configurable" value="0" />
+
+
+<div>
+<select id="filterCategoryId" name="category" onchange="javascript:submitFilter(this.id);">
+<option value="">Toutes les catégories</option>
+<option value="318445" >Parti Pirate</option><option value="318413" >Midi-Pyrénées</option><option value="318421" >SO Pirate</option><option value="318441" >Pirates!</option>
+</select>
+</div>
+<div>
+<select id="filterDepartmentId" name="department" onchange="javascript:submitFilter(this.id);">
+<option value="">Tous les produits</option>
+<option value="1" >Hommes</option><option value="3" >Femmes</option><option value="5" >Accessoires</option><option value="19" >Coques</option>
+</select>
+</div>
+
+
+</form>
+
+	
+	<div class="navigation">
+<small class="left">Page&nbsp;1&nbsp;de&nbsp;1</small>
+<div class="num3">
+
+
+
+<span>1</span>
+
+
+</div>
+<small class="right">Articles&nbsp;1&nbsp;à&nbsp;21&nbsp;de&nbsp;21</small>
+</div>
+	<div id="index" class="classicCompact">
+	
+	<form id="frmArticle27735359" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119090138" />
+		<input type="hidden" name="article" value="27735359" />
+        <input type="hidden" name="currentView" id="currentView27735359" value="41"/>
+		<input type="hidden" name="color" id="productColor27735359" value="1" />
+		<h3 class="small-gap-down">Tee-shirt blanc Parti Pirate&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27735359, false);" onmouseout="javascript:articleImageMouseover(27735359, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-blanc-parti-pirate-A27735359" onclick="appendColor(this, 27735359);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119090138/views/2,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-blanc-parti-pirate.png" border="0" alt="Tee shirts ~ Tee shirt Homme ~ Tee-shirt blanc Parti Pirate" title="Tee shirts ~ Tee shirt Homme ~ Tee-shirt blanc Parti Pirate" class="pimg" id="articleImage27735359" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119090138/views/2,width=190,height=190,appearanceId=1.png/tee-shirt-blanc-parti-pirate_design.png" id="compositionImage27735359" style="display:none" alt="Motif ~ Tee-shirt blanc Parti Pirate" title="Motif ~ Tee-shirt blanc Parti Pirate"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27735359">
+                                
+                                <li id="article27735359colorListEntry1" >
+                                    <a id="article27735359colorEntry1" onclick="return false;switchColor(27735359, 1, 41, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27735359" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/6', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27735359" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">20,40 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27735351" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119090080" />
+		<input type="hidden" name="article" value="27735351" />
+        <input type="hidden" name="currentView" id="currentView27735351" value="4"/>
+		<input type="hidden" name="color" id="productColor27735351" value="1" />
+		<h3 class="small-gap-down">Tee-shirt blanc Parti Pirate &nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27735351, false);" onmouseout="javascript:articleImageMouseover(27735351, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-blanc-parti-pirate-A27735351" onclick="appendColor(this, 27735351);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119090080/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-blanc-parti-pirate.png" border="0" alt="Tee shirts ~ Tee shirt Homme ~ Tee-shirt blanc Parti Pirate " title="Tee shirts ~ Tee shirt Homme ~ Tee-shirt blanc Parti Pirate " class="pimg" id="articleImage27735351" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119090080/views/1,width=190,height=190,appearanceId=1.png/tee-shirt-blanc-parti-pirate_design.png" id="compositionImage27735351" style="display:none" alt="Motif ~ Tee-shirt blanc Parti Pirate " title="Motif ~ Tee-shirt blanc Parti Pirate "/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27735351">
+                                
+                                <li id="article27735351colorListEntry1" >
+                                    <a id="article27735351colorEntry1" onclick="return false;switchColor(27735351, 1, 4, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27735351" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/6', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27735351" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">15,90 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27735349" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119090116" />
+		<input type="hidden" name="article" value="27735349" />
+        <input type="hidden" name="currentView" id="currentView27735349" value="4"/>
+		<input type="hidden" name="color" id="productColor27735349" value="5" />
+		<h3 class="small-gap-down">Tee-shirt rouge Parti Pirate&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27735349, false);" onmouseout="javascript:articleImageMouseover(27735349, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-rouge-parti-pirate-A27735349" onclick="appendColor(this, 27735349);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119090116/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-rouge-parti-pirate.png" border="0" alt="Tee shirts ~ Tee shirt Homme ~ Tee-shirt rouge Parti Pirate" title="Tee shirts ~ Tee shirt Homme ~ Tee-shirt rouge Parti Pirate" class="pimg" id="articleImage27735349" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119090116/views/1,width=190,height=190,appearanceId=5.png/tee-shirt-rouge-parti-pirate_design.png" id="compositionImage27735349" style="display:none" alt="Motif ~ Tee-shirt rouge Parti Pirate" title="Motif ~ Tee-shirt rouge Parti Pirate"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                <div id="horizontal_carousel27735349">
+                    <span class="previous_button27735349 arrow carouselLink back" id="left_button27735349" >&laquo;</span>
+                    <div class="colors container27735349">
+				
+                        <ul class="clearfix" id="articleColor27735349">
+                                
+                                <li id="article27735349colorListEntry594" >
+                                    <a id="article27735349colorEntry594" onclick="switchColor(27735349, 594, 4, 'big'); return false;" rel="track[action:color]" title="menthe" href="#"><img alt="menthe" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/594"/></a>
+                                </li>
+                                
+                                <li id="article27735349colorListEntry1" >
+                                    <a id="article27735349colorEntry1" onclick="switchColor(27735349, 1, 4, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                                <li id="article27735349colorListEntry2" >
+                                    <a id="article27735349colorEntry2" onclick="switchColor(27735349, 2, 4, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27735349colorListEntry5" class="selected">
+                                    <a id="article27735349colorEntry5" onclick="switchColor(27735349, 5, 4, 'big'); return false;" rel="track[action:color]" title="rouge" href="#"><img alt="rouge" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/5"/></a>
+                                </li>
+                                
+                                <li id="article27735349colorListEntry4" >
+                                    <a id="article27735349colorEntry4" onclick="switchColor(27735349, 4, 4, 'big'); return false;" rel="track[action:color]" title="marine" href="#"><img alt="marine" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/4"/></a>
+                                </li>
+                                
+                                <li id="article27735349colorListEntry231" >
+                                    <a id="article27735349colorEntry231" onclick="switchColor(27735349, 231, 4, 'big'); return false;" rel="track[action:color]" title="gris chiné" href="#"><img alt="gris chiné" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/231"/></a>
+                                </li>
+                                
+                                <li id="article27735349colorListEntry7" >
+                                    <a id="article27735349colorEntry7" onclick="switchColor(27735349, 7, 4, 'big'); return false;" rel="track[action:color]" title="jaune" href="#"><img alt="jaune" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/7"/></a>
+                                </li>
+                                
+                                <li id="article27735349colorListEntry388" >
+                                    <a id="article27735349colorEntry388" onclick="switchColor(27735349, 388, 4, 'big'); return false;" rel="track[action:color]" title="bleu diva" href="#"><img alt="bleu diva" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/388"/></a>
+                                </li>
+                                
+                        </ul>
+                
+                    </div>
+                    <span class="next_button27735349 arrow carouselLink forward" id="right_button27735349">&raquo;</span>
+                </div>
+                <script type="text/javascript">
+                    new UI.Carousel("horizontal_carousel27735349",{ container: '.container27735349', previousButton: '#left_button27735349', nextButton: '#right_button27735349', scrollInc: 3});
+                </script>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27735349" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/6', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27735349" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">15,90 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27735345" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119090076" />
+		<input type="hidden" name="article" value="27735345" />
+        <input type="hidden" name="currentView" id="currentView27735345" value="4"/>
+		<input type="hidden" name="color" id="productColor27735345" value="1" />
+		<h3 class="small-gap-down">Tee-shirt blanc et logo noir&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27735345, false);" onmouseout="javascript:articleImageMouseover(27735345, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-blanc-et-logo-noir-A27735345" onclick="appendColor(this, 27735345);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119090076/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-blanc-et-logo-noir.png" border="0" alt="Tee shirts ~ Tee shirt Homme ~ Tee-shirt blanc et logo noir" title="Tee shirts ~ Tee shirt Homme ~ Tee-shirt blanc et logo noir" class="pimg" id="articleImage27735345" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119090076/views/1,width=190,height=190,appearanceId=1.png/tee-shirt-blanc-et-logo-noir_design.png" id="compositionImage27735345" style="display:none" alt="Motif ~ Tee-shirt blanc et logo noir" title="Motif ~ Tee-shirt blanc et logo noir"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27735345">
+                                
+                                <li id="article27735345colorListEntry1" >
+                                    <a id="article27735345colorEntry1" onclick="return false;switchColor(27735345, 1, 4, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27735345" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/6', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27735345" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">15,90 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27735417" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119090244" />
+		<input type="hidden" name="article" value="27735417" />
+        <input type="hidden" name="currentView" id="currentView27735417" value="4"/>
+		<input type="hidden" name="color" id="productColor27735417" value="2" />
+		<h3 class="small-gap-down">Tee-shirt Parti Pirate avec logo dos&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27735417, false);" onmouseout="javascript:articleImageMouseover(27735417, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-parti-pirate-avec-logo-dos-A27735417" onclick="appendColor(this, 27735417);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119090244/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-parti-pirate-avec-logo-dos.png" border="0" alt="Tee shirts ~ Tee shirt Homme ~ Tee-shirt Parti Pirate avec logo dos" title="Tee shirts ~ Tee shirt Homme ~ Tee-shirt Parti Pirate avec logo dos" class="pimg" id="articleImage27735417" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119090244/views/1,width=190,height=190,appearanceId=2.png/tee-shirt-parti-pirate-avec-logo-dos_design.png" id="compositionImage27735417" style="display:none" alt="Motif ~ Tee-shirt Parti Pirate avec logo dos" title="Motif ~ Tee-shirt Parti Pirate avec logo dos"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                <div id="horizontal_carousel27735417">
+                    <span class="previous_button27735417 arrow carouselLink back" id="left_button27735417" >&laquo;</span>
+                    <div class="colors container27735417">
+				
+                        <ul class="clearfix" id="articleColor27735417">
+                                
+                                <li id="article27735417colorListEntry594" >
+                                    <a id="article27735417colorEntry594" onclick="switchColor(27735417, 594, 4, 'big'); return false;" rel="track[action:color]" title="menthe" href="#"><img alt="menthe" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/594"/></a>
+                                </li>
+                                
+                                <li id="article27735417colorListEntry1" >
+                                    <a id="article27735417colorEntry1" onclick="switchColor(27735417, 1, 4, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                                <li id="article27735417colorListEntry2" class="selected">
+                                    <a id="article27735417colorEntry2" onclick="switchColor(27735417, 2, 4, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27735417colorListEntry5" >
+                                    <a id="article27735417colorEntry5" onclick="switchColor(27735417, 5, 4, 'big'); return false;" rel="track[action:color]" title="rouge" href="#"><img alt="rouge" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/5"/></a>
+                                </li>
+                                
+                                <li id="article27735417colorListEntry4" >
+                                    <a id="article27735417colorEntry4" onclick="switchColor(27735417, 4, 4, 'big'); return false;" rel="track[action:color]" title="marine" href="#"><img alt="marine" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/4"/></a>
+                                </li>
+                                
+                                <li id="article27735417colorListEntry231" >
+                                    <a id="article27735417colorEntry231" onclick="switchColor(27735417, 231, 4, 'big'); return false;" rel="track[action:color]" title="gris chiné" href="#"><img alt="gris chiné" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/231"/></a>
+                                </li>
+                                
+                                <li id="article27735417colorListEntry7" >
+                                    <a id="article27735417colorEntry7" onclick="switchColor(27735417, 7, 4, 'big'); return false;" rel="track[action:color]" title="jaune" href="#"><img alt="jaune" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/7"/></a>
+                                </li>
+                                
+                                <li id="article27735417colorListEntry388" >
+                                    <a id="article27735417colorEntry388" onclick="switchColor(27735417, 388, 4, 'big'); return false;" rel="track[action:color]" title="bleu diva" href="#"><img alt="bleu diva" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/388"/></a>
+                                </li>
+                                
+                        </ul>
+                
+                    </div>
+                    <span class="next_button27735417 arrow carouselLink forward" id="right_button27735417">&raquo;</span>
+                </div>
+                <script type="text/javascript">
+                    new UI.Carousel("horizontal_carousel27735417",{ container: '.container27735417', previousButton: '#left_button27735417', nextButton: '#right_button27735417', scrollInc: 3});
+                </script>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27735417" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/6', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27735417" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">20,40 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27735681" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119090656" />
+		<input type="hidden" name="article" value="27735681" />
+        <input type="hidden" name="currentView" id="currentView27735681" value="1681"/>
+		<input type="hidden" name="color" id="productColor27735681" value="474" />
+		<h3 class="small-gap-down">Tee-shirt femme Parti Pirate&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27735681, false);" onmouseout="javascript:articleImageMouseover(27735681, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-femme-parti-pirate-A27735681" onclick="appendColor(this, 27735681);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119090656/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-femme-parti-pirate.png" border="0" alt="Tee shirts ~ Tee shirt contraste Femme ~ Tee-shirt femme Parti Pirate" title="Tee shirts ~ Tee shirt contraste Femme ~ Tee-shirt femme Parti Pirate" class="pimg" id="articleImage27735681" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119090656/views/1,width=190,height=190,appearanceId=474.png/tee-shirt-femme-parti-pirate_design.png" id="compositionImage27735681" style="display:none" alt="Motif ~ Tee-shirt femme Parti Pirate" title="Motif ~ Tee-shirt femme Parti Pirate"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt contraste Femme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27735681">
+                                
+                                <li id="article27735681colorListEntry473" >
+                                    <a id="article27735681colorEntry473" onclick="switchColor(27735681, 473, 1681, 'big'); return false;" rel="track[action:color]" title="marron/blanc" href="#"><img alt="marron/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/473"/></a>
+                                </li>
+                                
+                                <li id="article27735681colorListEntry70" >
+                                    <a id="article27735681colorEntry70" onclick="switchColor(27735681, 70, 1681, 'big'); return false;" rel="track[action:color]" title="blanc/noir" href="#"><img alt="blanc/noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/70"/></a>
+                                </li>
+                                
+                                <li id="article27735681colorListEntry71" >
+                                    <a id="article27735681colorEntry71" onclick="switchColor(27735681, 71, 1681, 'big'); return false;" rel="track[action:color]" title="blanc/rouge" href="#"><img alt="blanc/rouge" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/71"/></a>
+                                </li>
+                                
+                                <li id="article27735681colorListEntry474" class="selected">
+                                    <a id="article27735681colorEntry474" onclick="switchColor(27735681, 474, 1681, 'big'); return false;" rel="track[action:color]" title="violet/blanc" href="#"><img alt="violet/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/474"/></a>
+                                </li>
+                                
+                                <li id="article27735681colorListEntry472" >
+                                    <a id="article27735681colorEntry472" onclick="switchColor(27735681, 472, 1681, 'big'); return false;" rel="track[action:color]" title="vert/blanc" href="#"><img alt="vert/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/472"/></a>
+                                </li>
+                                
+                                <li id="article27735681colorListEntry471" >
+                                    <a id="article27735681colorEntry471" onclick="switchColor(27735681, 471, 1681, 'big'); return false;" rel="track[action:color]" title="gris souris/blanc" href="#"><img alt="gris souris/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/471"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27735681" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/718', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27735681" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">19,00 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27735419" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119090246" />
+		<input type="hidden" name="article" value="27735419" />
+        <input type="hidden" name="currentView" id="currentView27735419" value="4"/>
+		<input type="hidden" name="color" id="productColor27735419" value="2" />
+		<h3 class="small-gap-down">Tee-shirt noir Parti Pirate avec logo dos&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27735419, false);" onmouseout="javascript:articleImageMouseover(27735419, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-noir-parti-pirate-avec-logo-dos-A27735419" onclick="appendColor(this, 27735419);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119090246/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-noir-parti-pirate-avec-logo-dos.png" border="0" alt="Tee shirts ~ Tee shirt Homme ~ Tee-shirt noir Parti Pirate avec logo dos" title="Tee shirts ~ Tee shirt Homme ~ Tee-shirt noir Parti Pirate avec logo dos" class="pimg" id="articleImage27735419" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119090246/views/1,width=190,height=190,appearanceId=2.png/tee-shirt-noir-parti-pirate-avec-logo-dos_design.png" id="compositionImage27735419" style="display:none" alt="Motif ~ Tee-shirt noir Parti Pirate avec logo dos" title="Motif ~ Tee-shirt noir Parti Pirate avec logo dos"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                <div id="horizontal_carousel27735419">
+                    <span class="previous_button27735419 arrow carouselLink back" id="left_button27735419" >&laquo;</span>
+                    <div class="colors container27735419">
+				
+                        <ul class="clearfix" id="articleColor27735419">
+                                
+                                <li id="article27735419colorListEntry594" >
+                                    <a id="article27735419colorEntry594" onclick="switchColor(27735419, 594, 4, 'big'); return false;" rel="track[action:color]" title="menthe" href="#"><img alt="menthe" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/594"/></a>
+                                </li>
+                                
+                                <li id="article27735419colorListEntry1" >
+                                    <a id="article27735419colorEntry1" onclick="switchColor(27735419, 1, 4, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                                <li id="article27735419colorListEntry2" class="selected">
+                                    <a id="article27735419colorEntry2" onclick="switchColor(27735419, 2, 4, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27735419colorListEntry5" >
+                                    <a id="article27735419colorEntry5" onclick="switchColor(27735419, 5, 4, 'big'); return false;" rel="track[action:color]" title="rouge" href="#"><img alt="rouge" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/5"/></a>
+                                </li>
+                                
+                                <li id="article27735419colorListEntry4" >
+                                    <a id="article27735419colorEntry4" onclick="switchColor(27735419, 4, 4, 'big'); return false;" rel="track[action:color]" title="marine" href="#"><img alt="marine" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/4"/></a>
+                                </li>
+                                
+                                <li id="article27735419colorListEntry231" >
+                                    <a id="article27735419colorEntry231" onclick="switchColor(27735419, 231, 4, 'big'); return false;" rel="track[action:color]" title="gris chiné" href="#"><img alt="gris chiné" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/231"/></a>
+                                </li>
+                                
+                                <li id="article27735419colorListEntry7" >
+                                    <a id="article27735419colorEntry7" onclick="switchColor(27735419, 7, 4, 'big'); return false;" rel="track[action:color]" title="jaune" href="#"><img alt="jaune" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/7"/></a>
+                                </li>
+                                
+                                <li id="article27735419colorListEntry388" >
+                                    <a id="article27735419colorEntry388" onclick="switchColor(27735419, 388, 4, 'big'); return false;" rel="track[action:color]" title="bleu diva" href="#"><img alt="bleu diva" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/388"/></a>
+                                </li>
+                                
+                        </ul>
+                
+                    </div>
+                    <span class="next_button27735419 arrow carouselLink forward" id="right_button27735419">&raquo;</span>
+                </div>
+                <script type="text/javascript">
+                    new UI.Carousel("horizontal_carousel27735419",{ container: '.container27735419', previousButton: '#left_button27735419', nextButton: '#right_button27735419', scrollInc: 3});
+                </script>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27735419" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/6', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27735419" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">20,40 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27773975" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119137837" />
+		<input type="hidden" name="article" value="27773975" />
+        <input type="hidden" name="currentView" id="currentView27773975" value="1209"/>
+		<input type="hidden" name="color" id="productColor27773975" value="393" />
+		<h3 class="small-gap-down">Tee-shirt coton bio Femme&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27773975, false);" onmouseout="javascript:articleImageMouseover(27773975, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-coton-bio-femme-A27773975" onclick="appendColor(this, 27773975);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119137837/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-coton-bio-femme.png" border="0" alt="Tee shirts ~ Tee shirt Bio Femme ~ Tee-shirt coton bio Femme" title="Tee shirts ~ Tee shirt Bio Femme ~ Tee-shirt coton bio Femme" class="pimg" id="articleImage27773975" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119137837/views/1,width=190,height=190,appearanceId=393.png/tee-shirt-coton-bio-femme_design.png" id="compositionImage27773975" style="display:none" alt="Motif ~ Tee-shirt coton bio Femme" title="Motif ~ Tee-shirt coton bio Femme"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Bio Femme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                <div id="horizontal_carousel27773975">
+                    <span class="previous_button27773975 arrow carouselLink back" id="left_button27773975" >&laquo;</span>
+                    <div class="colors container27773975">
+				
+                        <ul class="clearfix" id="articleColor27773975">
+                                
+                                <li id="article27773975colorListEntry1" >
+                                    <a id="article27773975colorEntry1" onclick="switchColor(27773975, 1, 1209, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                                <li id="article27773975colorListEntry2" >
+                                    <a id="article27773975colorEntry2" onclick="switchColor(27773975, 2, 1209, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27773975colorListEntry231" >
+                                    <a id="article27773975colorEntry231" onclick="switchColor(27773975, 231, 1209, 'big'); return false;" rel="track[action:color]" title="gris chiné" href="#"><img alt="gris chiné" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/231"/></a>
+                                </li>
+                                
+                                <li id="article27773975colorListEntry393" class="selected">
+                                    <a id="article27773975colorEntry393" onclick="switchColor(27773975, 393, 1209, 'big'); return false;" rel="track[action:color]" title="violet" href="#"><img alt="violet" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/393"/></a>
+                                </li>
+                                
+                                <li id="article27773975colorListEntry508" >
+                                    <a id="article27773975colorEntry508" onclick="switchColor(27773975, 508, 1209, 'big'); return false;" rel="track[action:color]" title="charbon" href="#"><img alt="charbon" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/508"/></a>
+                                </li>
+                                
+                                <li id="article27773975colorListEntry399" >
+                                    <a id="article27773975colorEntry399" onclick="switchColor(27773975, 399, 1209, 'big'); return false;" rel="track[action:color]" title="marine" href="#"><img alt="marine" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/399"/></a>
+                                </li>
+                                
+                                <li id="article27773975colorListEntry296" >
+                                    <a id="article27773975colorEntry296" onclick="switchColor(27773975, 296, 1209, 'big'); return false;" rel="track[action:color]" title="vert clair" href="#"><img alt="vert clair" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/296"/></a>
+                                </li>
+                                
+                                <li id="article27773975colorListEntry294" >
+                                    <a id="article27773975colorEntry294" onclick="switchColor(27773975, 294, 1209, 'big'); return false;" rel="track[action:color]" title="rose néon" href="#"><img alt="rose néon" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/294"/></a>
+                                </li>
+                                
+                                <li id="article27773975colorListEntry295" >
+                                    <a id="article27773975colorEntry295" onclick="switchColor(27773975, 295, 1209, 'big'); return false;" rel="track[action:color]" title="rouge foncé" href="#"><img alt="rouge foncé" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/295"/></a>
+                                </li>
+                                
+                        </ul>
+                
+                    </div>
+                    <span class="next_button27773975 arrow carouselLink forward" id="right_button27773975">&raquo;</span>
+                </div>
+                <script type="text/javascript">
+                    new UI.Carousel("horizontal_carousel27773975",{ container: '.container27773975', previousButton: '#left_button27773975', nextButton: '#right_button27773975', scrollInc: 3});
+                </script>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27773975" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/461', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27773975" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">25,60 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27773911" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119137786" />
+		<input type="hidden" name="article" value="27773911" />
+        <input type="hidden" name="currentView" id="currentView27773911" value="2077"/>
+		<input type="hidden" name="color" id="productColor27773911" value="2" />
+		<h3 class="small-gap-down">Tee-shirt Femme manches longues&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27773911, false);" onmouseout="javascript:articleImageMouseover(27773911, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-femme-manches-longues-A27773911" onclick="appendColor(this, 27773911);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119137786/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-femme-manches-longues.png" border="0" alt="Manches longues ~ Tee shirt manches longues Premium Femme ~ Tee-shirt Femme manches longues" title="Manches longues ~ Tee shirt manches longues Premium Femme ~ Tee-shirt Femme manches longues" class="pimg" id="articleImage27773911" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119137786/views/1,width=190,height=190,appearanceId=2.png/tee-shirt-femme-manches-longues_design.png" id="compositionImage27773911" style="display:none" alt="Motif ~ Tee-shirt Femme manches longues" title="Motif ~ Tee-shirt Femme manches longues"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt manches longues Premium Femme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27773911">
+                                
+                                <li id="article27773911colorListEntry1" >
+                                    <a id="article27773911colorEntry1" onclick="switchColor(27773911, 1, 2077, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                                <li id="article27773911colorListEntry2" class="selected">
+                                    <a id="article27773911colorEntry2" onclick="switchColor(27773911, 2, 2077, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27773911colorListEntry366" >
+                                    <a id="article27773911colorEntry366" onclick="switchColor(27773911, 366, 2077, 'big'); return false;" rel="track[action:color]" title="rouge" href="#"><img alt="rouge" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/366"/></a>
+                                </li>
+                                
+                                <li id="article27773911colorListEntry348" >
+                                    <a id="article27773911colorEntry348" onclick="switchColor(27773911, 348, 2077, 'big'); return false;" rel="track[action:color]" title="bleu marine" href="#"><img alt="bleu marine" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/348"/></a>
+                                </li>
+                                
+                                <li id="article27773911colorListEntry231" >
+                                    <a id="article27773911colorEntry231" onclick="switchColor(27773911, 231, 2077, 'big'); return false;" rel="track[action:color]" title="gris chiné" href="#"><img alt="gris chiné" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/231"/></a>
+                                </li>
+                                
+                                <li id="article27773911colorListEntry507" >
+                                    <a id="article27773911colorEntry507" onclick="switchColor(27773911, 507, 2077, 'big'); return false;" rel="track[action:color]" title="rubis" href="#"><img alt="rubis" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/507"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27773911" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/876', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27773911" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">21,40 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27737207" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092512" />
+		<input type="hidden" name="article" value="27737207" />
+        <input type="hidden" name="currentView" id="currentView27737207" value="66"/>
+		<input type="hidden" name="color" id="productColor27737207" value="1" />
+		<h3 class="small-gap-down">Mug Parti Pirate&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27737207, false);" onmouseout="javascript:articleImageMouseover(27737207, true);">
+	        <a href="http://echoppe.spreadshirt.fr/mug-parti-pirate-A27737207" onclick="appendColor(this, 27737207);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092512/views/2,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/mug-parti-pirate.png" border="0" alt="Bouteilles et Tasses ~ Tasse ~ Mug Parti Pirate" title="Bouteilles et Tasses ~ Tasse ~ Mug Parti Pirate" class="pimg" id="articleImage27737207" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092512/views/2,width=190,height=190,appearanceId=1.png/mug-parti-pirate_design.png" id="compositionImage27737207" style="display:none" alt="Motif ~ Mug Parti Pirate" title="Motif ~ Mug Parti Pirate"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tasse</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27737207">
+                                
+                                <li id="article27737207colorListEntry1" >
+                                    <a id="article27737207colorEntry1" onclick="return false;switchColor(27737207, 1, 66, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27737207" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/31', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				
+				
+				<span>unique</span>
+				<input type="hidden" id="articleSize27737207" name="size" value="29" />
+				<!-- <select id="articleSize27737207" name="size">
+					<option value="29">unique</option>
+				</select> -->
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">10,90 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27737145" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092488" />
+		<input type="hidden" name="article" value="27737145" />
+        <input type="hidden" name="currentView" id="currentView27737145" value="215"/>
+		<input type="hidden" name="color" id="productColor27737145" value="1" />
+		<h3 class="small-gap-down">Badge Parti Pirate&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27737145, false);" onmouseout="javascript:articleImageMouseover(27737145, true);">
+	        <a href="http://echoppe.spreadshirt.fr/badge-parti-pirate-A27737145" onclick="appendColor(this, 27737145);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092488/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/badge-parti-pirate.png" border="0" alt="Badges ~ Badge petit 25 mm ~ Badge Parti Pirate" title="Badges ~ Badge petit 25 mm ~ Badge Parti Pirate" class="pimg" id="articleImage27737145" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092488/views/1,width=190,height=190,appearanceId=1.png/badge-parti-pirate_design.png" id="compositionImage27737145" style="display:none" alt="Motif ~ Badge Parti Pirate" title="Motif ~ Badge Parti Pirate"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Badge petit 25 mm</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27737145">
+                                
+                                <li id="article27737145colorListEntry1" >
+                                    <a id="article27737145colorEntry1" onclick="return false;switchColor(27737145, 1, 215, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27737145" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/127', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				
+				
+				<span>unique</span>
+				<input type="hidden" id="articleSize27737145" name="size" value="29" />
+				<!-- <select id="articleSize27737145" name="size">
+					<option value="29">unique</option>
+				</select> -->
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">6,90 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27737093" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092427" />
+		<input type="hidden" name="article" value="27737093" />
+        <input type="hidden" name="currentView" id="currentView27737093" value="1798"/>
+		<input type="hidden" name="color" id="productColor27737093" value="70" />
+		<h3 class="small-gap-down">Coque Samsung Galaxy S2 Parti Pirate&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27737093, false);" onmouseout="javascript:articleImageMouseover(27737093, true);">
+	        <a href="http://echoppe.spreadshirt.fr/coque-samsung-galaxy-s2-parti-pirate-A27737093" onclick="appendColor(this, 27737093);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092427/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/coque-samsung-galaxy-s2-parti-pirate.png" border="0" alt="Coques pour portable et tablette ~ Coque Samsung Galaxy S2 ~ Coque Samsung Galaxy S2 Parti Pirate" title="Coques pour portable et tablette ~ Coque Samsung Galaxy S2 ~ Coque Samsung Galaxy S2 Parti Pirate" class="pimg" id="articleImage27737093" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092427/views/1,width=190,height=190,appearanceId=70.png/coque-samsung-galaxy-s2-parti-pirate_design.png" id="compositionImage27737093" style="display:none" alt="Motif ~ Coque Samsung Galaxy S2 Parti Pirate" title="Motif ~ Coque Samsung Galaxy S2 Parti Pirate"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Coque Samsung Galaxy S2</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27737093">
+                                
+                                <li id="article27737093colorListEntry70" >
+                                    <a id="article27737093colorEntry70" onclick="return false;switchColor(27737093, 70, 1798, 'big'); return false;" rel="track[action:color]" title="blanc/noir" href="#"><img alt="blanc/noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/70"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27737093" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/784', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				
+				
+				<span>unique</span>
+				<input type="hidden" id="articleSize27737093" name="size" value="29" />
+				<!-- <select id="articleSize27737093" name="size">
+					<option value="29">unique</option>
+				</select> -->
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">11,90 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27736917" action="http://echoppe.spreadshirt.fr/tee-shirt-parti-pirate-nsa-A27736917" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092343" />
+		<input type="hidden" name="article" value="27736917" />
+        <input type="hidden" name="currentView" id="currentView27736917" value="200"/>
+		<input type="hidden" name="color" id="productColor27736917" value="26" />
+		<h3 class="small-gap-down">Tee-shirt Parti Pirate NSA&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27736917, false);" onmouseout="javascript:articleImageMouseover(27736917, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-parti-pirate-nsa-A27736917" onclick="appendColor(this, 27736917);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092343/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-parti-pirate-nsa.png" border="0" alt="Tee shirts ~ Tee shirt baseball manches courtes Homme ~ Tee-shirt Parti Pirate NSA" title="Tee shirts ~ Tee shirt baseball manches courtes Homme ~ Tee-shirt Parti Pirate NSA" class="pimg" id="articleImage27736917" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092343/views/1,width=190,height=190,appearanceId=26.png/tee-shirt-parti-pirate-nsa_design.png" id="compositionImage27736917" style="display:none" alt="Motif ~ Tee-shirt Parti Pirate NSA" title="Motif ~ Tee-shirt Parti Pirate NSA"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt baseball manches courtes Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27736917">
+                                
+                                <li id="article27736917colorListEntry70" >
+                                    <a id="article27736917colorEntry70" onclick="switchColor(27736917, 70, 200, 'big'); return false;" rel="track[action:color]" title="blanc/noir" href="#"><img alt="blanc/noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/70"/></a>
+                                </li>
+                                
+                                <li id="article27736917colorListEntry26" class="selected">
+                                    <a id="article27736917colorEntry26" onclick="switchColor(27736917, 26, 200, 'big'); return false;" rel="track[action:color]" title="blanc/marine" href="#"><img alt="blanc/marine" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/26"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27736917" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/114', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27736917" name="size">
+					<option value="0" >...</option>
+					<option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">24,60 €</strong>
+		</span>
+		
+		<input type="submit" value="Changer texte" title="Changer texte" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27774101" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119137859" />
+		<input type="hidden" name="article" value="27774101" />
+        <input type="hidden" name="currentView" id="currentView27774101" value="92"/>
+		<input type="hidden" name="color" id="productColor27774101" value="17" />
+		<h3 class="small-gap-down">sac pirate&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27774101, false);" onmouseout="javascript:articleImageMouseover(27774101, true);">
+	        <a href="http://echoppe.spreadshirt.fr/sac-pirate-A27774101" onclick="appendColor(this, 27774101);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119137859/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/sac-pirate.png" border="0" alt="Sacs et sacs à dos ~ Tote Bag ~ sac pirate" title="Sacs et sacs à dos ~ Tote Bag ~ sac pirate" class="pimg" id="articleImage27774101" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119137859/views/1,width=190,height=190,appearanceId=17.png/sac-pirate_design.png" id="compositionImage27774101" style="display:none" alt="Motif ~ sac pirate" title="Motif ~ sac pirate"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tote Bag</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                <div id="horizontal_carousel27774101">
+                    <span class="previous_button27774101 arrow carouselLink back" id="left_button27774101" >&laquo;</span>
+                    <div class="colors container27774101">
+				
+                        <ul class="clearfix" id="articleColor27774101">
+                                
+                                <li id="article27774101colorListEntry439" >
+                                    <a id="article27774101colorEntry439" onclick="switchColor(27774101, 439, 92, 'big'); return false;" rel="track[action:color]" title="vert" href="#"><img alt="vert" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/439"/></a>
+                                </li>
+                                
+                                <li id="article27774101colorListEntry494" >
+                                    <a id="article27774101colorEntry494" onclick="switchColor(27774101, 494, 92, 'big'); return false;" rel="track[action:color]" title="bleu pâle" href="#"><img alt="bleu pâle" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/494"/></a>
+                                </li>
+                                
+                                <li id="article27774101colorListEntry1" >
+                                    <a id="article27774101colorEntry1" onclick="switchColor(27774101, 1, 92, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                                <li id="article27774101colorListEntry2" >
+                                    <a id="article27774101colorEntry2" onclick="switchColor(27774101, 2, 92, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27774101colorListEntry5" >
+                                    <a id="article27774101colorEntry5" onclick="switchColor(27774101, 5, 92, 'big'); return false;" rel="track[action:color]" title="rouge" href="#"><img alt="rouge" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/5"/></a>
+                                </li>
+                                
+                                <li id="article27774101colorListEntry17" class="selected">
+                                    <a id="article27774101colorEntry17" onclick="switchColor(27774101, 17, 92, 'big'); return false;" rel="track[action:color]" title="bleu royal" href="#"><img alt="bleu royal" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/17"/></a>
+                                </li>
+                                
+                                <li id="article27774101colorListEntry134" >
+                                    <a id="article27774101colorEntry134" onclick="switchColor(27774101, 134, 92, 'big'); return false;" rel="track[action:color]" title="violet" href="#"><img alt="violet" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/134"/></a>
+                                </li>
+                                
+                                <li id="article27774101colorListEntry307" >
+                                    <a id="article27774101colorEntry307" onclick="switchColor(27774101, 307, 92, 'big'); return false;" rel="track[action:color]" title="gris graphite" href="#"><img alt="gris graphite" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/307"/></a>
+                                </li>
+                                
+                        </ul>
+                
+                    </div>
+                    <span class="next_button27774101 arrow carouselLink forward" id="right_button27774101">&raquo;</span>
+                </div>
+                <script type="text/javascript">
+                    new UI.Carousel("horizontal_carousel27774101",{ container: '.container27774101', previousButton: '#left_button27774101', nextButton: '#right_button27774101', scrollInc: 3});
+                </script>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27774101" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/56', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				
+				
+				<span>unique</span>
+				<input type="hidden" id="articleSize27774101" name="size" value="29" />
+				<!-- <select id="articleSize27774101" name="size">
+					<option value="29">unique</option>
+				</select> -->
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">11,40 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27774097" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119137809" />
+		<input type="hidden" name="article" value="27774097" />
+        <input type="hidden" name="currentView" id="currentView27774097" value="1215"/>
+		<input type="hidden" name="color" id="productColor27774097" value="2" />
+		<h3 class="small-gap-down">sac bio&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27774097, false);" onmouseout="javascript:articleImageMouseover(27774097, true);">
+	        <a href="http://echoppe.spreadshirt.fr/sac-bio-A27774097" onclick="appendColor(this, 27774097);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119137809/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/sac-bio.png" border="0" alt="Sacs et sacs à dos ~ Sac en tissu biologique ~ sac bio" title="Sacs et sacs à dos ~ Sac en tissu biologique ~ sac bio" class="pimg" id="articleImage27774097" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119137809/views/1,width=190,height=190,appearanceId=2.png/sac-bio_design.png" id="compositionImage27774097" style="display:none" alt="Motif ~ sac bio" title="Motif ~ sac bio"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Sac en tissu biologique</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27774097">
+                                
+                                <li id="article27774097colorListEntry1" >
+                                    <a id="article27774097colorEntry1" onclick="switchColor(27774097, 1, 1215, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                                <li id="article27774097colorListEntry2" class="selected">
+                                    <a id="article27774097colorEntry2" onclick="switchColor(27774097, 2, 1215, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27774097colorListEntry5" >
+                                    <a id="article27774097colorEntry5" onclick="switchColor(27774097, 5, 1215, 'big'); return false;" rel="track[action:color]" title="rouge" href="#"><img alt="rouge" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/5"/></a>
+                                </li>
+                                
+                                <li id="article27774097colorListEntry292" >
+                                    <a id="article27774097colorEntry292" onclick="switchColor(27774097, 292, 1215, 'big'); return false;" rel="track[action:color]" title="vert feuille" href="#"><img alt="vert feuille" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/292"/></a>
+                                </li>
+                                
+                                <li id="article27774097colorListEntry293" >
+                                    <a id="article27774097colorEntry293" onclick="switchColor(27774097, 293, 1215, 'big'); return false;" rel="track[action:color]" title="bleu paon" href="#"><img alt="bleu paon" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/293"/></a>
+                                </li>
+                                
+                                <li id="article27774097colorListEntry357" >
+                                    <a id="article27774097colorEntry357" onclick="switchColor(27774097, 357, 1215, 'big'); return false;" rel="track[action:color]" title="magenta" href="#"><img alt="magenta" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/357"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27774097" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/563', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				
+				
+				<span>unique</span>
+				<input type="hidden" id="articleSize27774097" name="size" value="29" />
+				<!-- <select id="articleSize27774097" name="size">
+					<option value="29">unique</option>
+				</select> -->
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">13,80 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27737259" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092551" />
+		<input type="hidden" name="article" value="27737259" />
+        <input type="hidden" name="currentView" id="currentView27737259" value="1850"/>
+		<input type="hidden" name="color" id="productColor27737259" value="1" />
+		<h3 class="small-gap-down">Tee-Shirt Parti Pirate Parti Pirate Sud Ouest&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27737259, false);" onmouseout="javascript:articleImageMouseover(27737259, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-parti-pirate-parti-pirate-sud-ouest-A27737259" onclick="appendColor(this, 27737259);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092551/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-parti-pirate-parti-pirate-sud-ouest.png" border="0" alt="Tee shirts ~ Tee shirt Premium Homme ~ Tee-Shirt Parti Pirate Parti Pirate Sud Ouest" title="Tee shirts ~ Tee shirt Premium Homme ~ Tee-Shirt Parti Pirate Parti Pirate Sud Ouest" class="pimg" id="articleImage27737259" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092551/views/1,width=190,height=190,appearanceId=1.png/tee-shirt-parti-pirate-parti-pirate-sud-ouest_design.png" id="compositionImage27737259" style="display:none" alt="Motif ~ Tee-Shirt Parti Pirate Parti Pirate Sud Ouest" title="Motif ~ Tee-Shirt Parti Pirate Parti Pirate Sud Ouest"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Premium Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27737259">
+                                
+                                <li id="article27737259colorListEntry1" >
+                                    <a id="article27737259colorEntry1" onclick="return false;switchColor(27737259, 1, 1850, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27737259" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/812', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27737259" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option><option value="94" >4XL</option><option value="102" >5XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">18,40 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27736969" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092392" />
+		<input type="hidden" name="article" value="27736969" />
+        <input type="hidden" name="currentView" id="currentView27736969" value="200"/>
+		<input type="hidden" name="color" id="productColor27736969" value="26" />
+		<h3 class="small-gap-down">Tee-shirt So-Pirate Parti Pirate Sud-Ouest NSA&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27736969, false);" onmouseout="javascript:articleImageMouseover(27736969, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-so-pirate-parti-pirate-sud-ouest-nsa-A27736969" onclick="appendColor(this, 27736969);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092392/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-so-pirate-parti-pirate-sud-ouest-nsa.png" border="0" alt="Tee shirts ~ Tee shirt baseball manches courtes Homme ~ Tee-shirt So-Pirate Parti Pirate Sud-Ouest NSA" title="Tee shirts ~ Tee shirt baseball manches courtes Homme ~ Tee-shirt So-Pirate Parti Pirate Sud-Ouest NSA" class="pimg" id="articleImage27736969" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092392/views/1,width=190,height=190,appearanceId=26.png/tee-shirt-so-pirate-parti-pirate-sud-ouest-nsa_design.png" id="compositionImage27736969" style="display:none" alt="Motif ~ Tee-shirt So-Pirate Parti Pirate Sud-Ouest NSA" title="Motif ~ Tee-shirt So-Pirate Parti Pirate Sud-Ouest NSA"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt baseball manches courtes Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27736969">
+                                
+                                <li id="article27736969colorListEntry70" >
+                                    <a id="article27736969colorEntry70" onclick="switchColor(27736969, 70, 200, 'big'); return false;" rel="track[action:color]" title="blanc/noir" href="#"><img alt="blanc/noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/70"/></a>
+                                </li>
+                                
+                                <li id="article27736969colorListEntry26" class="selected">
+                                    <a id="article27736969colorEntry26" onclick="switchColor(27736969, 26, 200, 'big'); return false;" rel="track[action:color]" title="blanc/marine" href="#"><img alt="blanc/marine" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/26"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27736969" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/114', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27736969" name="size">
+					<option value="0" >...</option>
+					<option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">24,60 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27736837" action="http://echoppe.spreadshirt.fr/tee-shirt-parti-pirate-nsa-yes-we-scan-A27736837" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092257" />
+		<input type="hidden" name="article" value="27736837" />
+        <input type="hidden" name="currentView" id="currentView27736837" value="1446"/>
+		<input type="hidden" name="color" id="productColor27736837" value="405" />
+		<h3 class="small-gap-down">Tee-shirt Parti Pirate NSA &quot;yes we scan&quot;&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27736837, false);" onmouseout="javascript:articleImageMouseover(27736837, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-parti-pirate-nsa-yes-we-scan-A27736837" onclick="appendColor(this, 27736837);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092257/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-parti-pirate-nsa-yes-we-scan.png" border="0" alt="Tee shirts ~ Tee shirt contraste Homme ~ Tee-shirt Parti Pirate NSA "yes we scan"" title="Tee shirts ~ Tee shirt contraste Homme ~ Tee-shirt Parti Pirate NSA "yes we scan"" class="pimg" id="articleImage27736837" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092257/views/1,width=190,height=190,appearanceId=405.png/tee-shirt-parti-pirate-nsa-yes-we-scan_design.png" id="compositionImage27736837" style="display:none" alt="Motif ~ Tee-shirt Parti Pirate NSA "yes we scan"" title="Motif ~ Tee-shirt Parti Pirate NSA "yes we scan""/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt contraste Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                <div id="horizontal_carousel27736837">
+                    <span class="previous_button27736837 arrow carouselLink back" id="left_button27736837" >&laquo;</span>
+                    <div class="colors container27736837">
+				
+                        <ul class="clearfix" id="articleColor27736837">
+                                
+                                <li id="article27736837colorListEntry473" >
+                                    <a id="article27736837colorEntry473" onclick="switchColor(27736837, 473, 1446, 'big'); return false;" rel="track[action:color]" title="marron/blanc" href="#"><img alt="marron/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/473"/></a>
+                                </li>
+                                
+                                <li id="article27736837colorListEntry408" >
+                                    <a id="article27736837colorEntry408" onclick="switchColor(27736837, 408, 1446, 'big'); return false;" rel="track[action:color]" title="orange/blanc" href="#"><img alt="orange/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/408"/></a>
+                                </li>
+                                
+                                <li id="article27736837colorListEntry405" class="selected">
+                                    <a id="article27736837colorEntry405" onclick="switchColor(27736837, 405, 1446, 'big'); return false;" rel="track[action:color]" title="bleu/blanc" href="#"><img alt="bleu/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/405"/></a>
+                                </li>
+                                
+                                <li id="article27736837colorListEntry407" >
+                                    <a id="article27736837colorEntry407" onclick="switchColor(27736837, 407, 1446, 'big'); return false;" rel="track[action:color]" title="jaune/vert" href="#"><img alt="jaune/vert" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/407"/></a>
+                                </li>
+                                
+                                <li id="article27736837colorListEntry70" >
+                                    <a id="article27736837colorEntry70" onclick="switchColor(27736837, 70, 1446, 'big'); return false;" rel="track[action:color]" title="blanc/noir" href="#"><img alt="blanc/noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/70"/></a>
+                                </li>
+                                
+                                <li id="article27736837colorListEntry472" >
+                                    <a id="article27736837colorEntry472" onclick="switchColor(27736837, 472, 1446, 'big'); return false;" rel="track[action:color]" title="vert/blanc" href="#"><img alt="vert/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/472"/></a>
+                                </li>
+                                
+                                <li id="article27736837colorListEntry471" >
+                                    <a id="article27736837colorEntry471" onclick="switchColor(27736837, 471, 1446, 'big'); return false;" rel="track[action:color]" title="gris souris/blanc" href="#"><img alt="gris souris/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/471"/></a>
+                                </li>
+                                
+                                <li id="article27736837colorListEntry48" >
+                                    <a id="article27736837colorEntry48" onclick="switchColor(27736837, 48, 1446, 'big'); return false;" rel="track[action:color]" title="rouge/blanc" href="#"><img alt="rouge/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/48"/></a>
+                                </li>
+                                
+                                <li id="article27736837colorListEntry54" >
+                                    <a id="article27736837colorEntry54" onclick="switchColor(27736837, 54, 1446, 'big'); return false;" rel="track[action:color]" title="noir/blanc" href="#"><img alt="noir/blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/54"/></a>
+                                </li>
+                                
+                        </ul>
+                
+                    </div>
+                    <span class="next_button27736837 arrow carouselLink forward" id="right_button27736837">&raquo;</span>
+                </div>
+                <script type="text/javascript">
+                    new UI.Carousel("horizontal_carousel27736837",{ container: '.container27736837', previousButton: '#left_button27736837', nextButton: '#right_button27736837', scrollInc: 3});
+                </script>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27736837" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/646', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27736837" name="size">
+					<option value="0" >...</option>
+					<option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">31,10 €</strong>
+		</span>
+		
+		<input type="submit" value="Changer texte" title="Changer texte" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27736755" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092186" />
+		<input type="hidden" name="article" value="27736755" />
+        <input type="hidden" name="currentView" id="currentView27736755" value="1534"/>
+		<input type="hidden" name="color" id="productColor27736755" value="2" />
+		<h3 class="small-gap-down">Sweat noir Parti Pirate Midi-Pyrénées&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27736755, false);" onmouseout="javascript:articleImageMouseover(27736755, true);">
+	        <a href="http://echoppe.spreadshirt.fr/sweat-noir-parti-pirate-midi-pyrenees-A27736755" onclick="appendColor(this, 27736755);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092186/views/2,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/sweat-noir-parti-pirate-midi-pyrenees.png" border="0" alt="Sweat-shirts ~ Veste à capuche American Apparel ~ Sweat noir Parti Pirate Midi-Pyrénées" title="Sweat-shirts ~ Veste à capuche American Apparel ~ Sweat noir Parti Pirate Midi-Pyrénées" class="pimg" id="articleImage27736755" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092186/views/2,width=190,height=190,appearanceId=2.png/sweat-noir-parti-pirate-midi-pyrenees_design.png" id="compositionImage27736755" style="display:none" alt="Motif ~ Sweat noir Parti Pirate Midi-Pyrénées" title="Motif ~ Sweat noir Parti Pirate Midi-Pyrénées"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Veste à capuche American Apparel</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27736755">
+                                
+                                <li id="article27736755colorListEntry448" >
+                                    <a id="article27736755colorEntry448" onclick="switchColor(27736755, 448, 1534, 'big'); return false;" rel="track[action:color]" title="vert sirène" href="#"><img alt="vert sirène" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/448"/></a>
+                                </li>
+                                
+                                <li id="article27736755colorListEntry449" >
+                                    <a id="article27736755colorEntry449" onclick="switchColor(27736755, 449, 1534, 'big'); return false;" rel="track[action:color]" title="bleu lapis" href="#"><img alt="bleu lapis" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/449"/></a>
+                                </li>
+                                
+                                <li id="article27736755colorListEntry2" class="selected">
+                                    <a id="article27736755colorEntry2" onclick="switchColor(27736755, 2, 1534, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27736755colorListEntry447" >
+                                    <a id="article27736755colorEntry447" onclick="switchColor(27736755, 447, 1534, 'big'); return false;" rel="track[action:color]" title="violet" href="#"><img alt="violet" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/447"/></a>
+                                </li>
+                                
+                                <li id="article27736755colorListEntry261" >
+                                    <a id="article27736755colorEntry261" onclick="switchColor(27736755, 261, 1534, 'big'); return false;" rel="track[action:color]" title="rouge classique" href="#"><img alt="rouge classique" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/261"/></a>
+                                </li>
+                                
+                                <li id="article27736755colorListEntry33" >
+                                    <a id="article27736755colorEntry33" onclick="switchColor(27736755, 33, 1534, 'big'); return false;" rel="track[action:color]" title="gris" href="#"><img alt="gris" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/33"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27736755" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/669', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27736755" name="size">
+					<option value="0" >...</option>
+					<option value="1" >XS</option><option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">38,00 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27736719" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119092109" />
+		<input type="hidden" name="article" value="27736719" />
+        <input type="hidden" name="currentView" id="currentView27736719" value="1534"/>
+		<input type="hidden" name="color" id="productColor27736719" value="447" />
+		<h3 class="small-gap-down">Sweat mauve Parti Pirate&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27736719, false);" onmouseout="javascript:articleImageMouseover(27736719, true);">
+	        <a href="http://echoppe.spreadshirt.fr/sweat-mauve-parti-pirate-A27736719" onclick="appendColor(this, 27736719);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119092109/views/2,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/sweat-mauve-parti-pirate.png" border="0" alt="Sweat-shirts ~ Veste à capuche American Apparel ~ Sweat mauve Parti Pirate" title="Sweat-shirts ~ Veste à capuche American Apparel ~ Sweat mauve Parti Pirate" class="pimg" id="articleImage27736719" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119092109/views/2,width=190,height=190,appearanceId=447.png/sweat-mauve-parti-pirate_design.png" id="compositionImage27736719" style="display:none" alt="Motif ~ Sweat mauve Parti Pirate" title="Motif ~ Sweat mauve Parti Pirate"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Veste à capuche American Apparel</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27736719">
+                                
+                                <li id="article27736719colorListEntry448" >
+                                    <a id="article27736719colorEntry448" onclick="switchColor(27736719, 448, 1534, 'big'); return false;" rel="track[action:color]" title="vert sirène" href="#"><img alt="vert sirène" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/448"/></a>
+                                </li>
+                                
+                                <li id="article27736719colorListEntry449" >
+                                    <a id="article27736719colorEntry449" onclick="switchColor(27736719, 449, 1534, 'big'); return false;" rel="track[action:color]" title="bleu lapis" href="#"><img alt="bleu lapis" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/449"/></a>
+                                </li>
+                                
+                                <li id="article27736719colorListEntry2" >
+                                    <a id="article27736719colorEntry2" onclick="switchColor(27736719, 2, 1534, 'big'); return false;" rel="track[action:color]" title="noir" href="#"><img alt="noir" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/2"/></a>
+                                </li>
+                                
+                                <li id="article27736719colorListEntry447" class="selected">
+                                    <a id="article27736719colorEntry447" onclick="switchColor(27736719, 447, 1534, 'big'); return false;" rel="track[action:color]" title="violet" href="#"><img alt="violet" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/447"/></a>
+                                </li>
+                                
+                                <li id="article27736719colorListEntry261" >
+                                    <a id="article27736719colorEntry261" onclick="switchColor(27736719, 261, 1534, 'big'); return false;" rel="track[action:color]" title="rouge classique" href="#"><img alt="rouge classique" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/261"/></a>
+                                </li>
+                                
+                                <li id="article27736719colorListEntry33" >
+                                    <a id="article27736719colorEntry33" onclick="switchColor(27736719, 33, 1534, 'big'); return false;" rel="track[action:color]" title="gris" href="#"><img alt="gris" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/33"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27736719" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/669', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27736719" name="size">
+					<option value="0" >...</option>
+					<option value="1" >XS</option><option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">38,00 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	<form id="frmArticle27735365" action="https://echoppe.spreadshirt.fr/shop/basket/addtobasket" method="post">
+	<fieldset class="with-title">
+        <legend></legend>
+		<input type="hidden" name="product" value="119090141" />
+		<input type="hidden" name="article" value="27735365" />
+        <input type="hidden" name="currentView" id="currentView27735365" value="4"/>
+		<input type="hidden" name="color" id="productColor27735365" value="1" />
+		<h3 class="small-gap-down">Tee-shirt blanc Parti Pirate Midi-Pyrénées&nbsp;</h3>
+		<div class="articleImages" onmouseover="javascript:articleImageMouseover(27735365, false);" onmouseout="javascript:articleImageMouseover(27735365, true);">
+	        <a href="http://echoppe.spreadshirt.fr/tee-shirt-blanc-parti-pirate-midi-pyrenees-A27735365" onclick="appendColor(this, 27735365);">
+                        <img src="https://image.spreadshirtmedia.net/image-server/v1/products/119090141/views/1,width=190,height=190,rotateX=0,rotateY=-20,rotateZ=0.png/tee-shirt-blanc-parti-pirate-midi-pyrenees.png" border="0" alt="Tee shirts ~ Tee shirt Homme ~ Tee-shirt blanc Parti Pirate Midi-Pyrénées" title="Tee shirts ~ Tee shirt Homme ~ Tee-shirt blanc Parti Pirate Midi-Pyrénées" class="pimg" id="articleImage27735365" />
+                     <img src="https://image.spreadshirtmedia.net/image-server/v1/compositions/119090141/views/1,width=190,height=190,appearanceId=1.png/tee-shirt-blanc-parti-pirate-midi-pyrenees_design.png" id="compositionImage27735365" style="display:none" alt="Motif ~ Tee-shirt blanc Parti Pirate Midi-Pyrénées" title="Motif ~ Tee-shirt blanc Parti Pirate Midi-Pyrénées"/> </a>
+			
+		</div>
+		<div class="articlePriceWrapper">
+		<div class="clearfix articleDesc">
+			
+			<h5 title="">Tee shirt Homme</h5>
+			
+			
+			
+			
+			
+			
+			<div class="freeColorSelection clearfix">
+				<h4>Couleur</h4>
+				
+                        <ul class="clearfix" id="articleColor27735365">
+                                
+                                <li id="article27735365colorListEntry1" >
+                                    <a id="article27735365colorEntry1" onclick="return false;switchColor(27735365, 1, 4, 'big'); return false;" rel="track[action:color]" title="blanc" href="#"><img alt="blanc" src="https://image.spreadshirtmedia.net/image-server/v1/appearances/1"/></a>
+                                </li>
+                                
+                        </ul>
+                
+			</div>
+	        
+			
+			<div class="articleSizes">
+	            <label for="articleSize27735365" onclick="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/producttypedetails/Popup/Show/productType/6', 'measureTablePopup', 'width=680, height=650, scrollbars=1');">Taille</label>
+	            
+				<select id="articleSize27735365" name="size">
+					<option value="0" >...</option>
+					<option value="2" >S</option><option value="3" >M</option><option value="4" >L</option><option value="5" >XL</option><option value="6" >XXL</option><option value="38" >3XL</option>
+				</select>
+				
+				
+				
+			</div>
+			
+	
+	        
+	
+			
+	
+			
+			
+	
+			
+		</div>
+		<div class="articlePrice clearfix ">
+		
+	
+		
+	
+		<p class="message tax-shipping">
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27', 'taxPopup', 'width=868, height=560, scrollbars=1');">TTC</a><br />
+		<a href="javascript:popUp('http://echoppe.spreadshirt.fr/shop/info/shipping/Popup/Show', 'shippingPopup', 'width=868, height=560, scrollbars=1');">Hors frais de port</a></p>
+		
+	
+		
+		<label>Prix</label>
+		<span class="priceGroup">
+			
+			<strong class="price">20,40 €</strong>
+		</span>
+		
+		<input type="submit" value="Ajouter au panier" title="Ajouter au panier" class="button basket"/>
+		</div>
+		</div>
+	</fieldset>
+	</form>
+	
+	</div>
+	<div class="navigation">
+<small class="left">Page&nbsp;1&nbsp;de&nbsp;1</small>
+<div class="num3">
+
+
+
+<span>1</span>
+
+
+</div>
+<small class="right">Articles&nbsp;1&nbsp;à&nbsp;21&nbsp;de&nbsp;21</small>
+</div>
+	
+</div>
+<div id="menuFooter">
+    <ul>
+    <li><a href="http://echoppe.spreadshirt.fr/shop/terms-and-conditions" title="Termes et conditions">Termes et conditions</a></li><li><a href="http://echoppe.spreadshirt.fr/shop/imprint" title="Mentions légales">Mentions légales</a></li><li><a href="http://echoppe.spreadshirt.fr/shop/privacy" title="Protection privée">Protection privée</a></li><li><a href="http://echoppe.spreadshirt.fr/shop/copyright" title="Copyright">Copyright</a></li><li><a href="http://echoppe.spreadshirt.fr/shop/feed" title="RSS" target="_blank">RSS</a></li><li><a href="http://echoppe.spreadshirt.fr/shop/help" title="Aide">Aide</a></li>
+    </ul>
+</div>
+
+
+
+<div class="ie-spacer-float-bug-fixer">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+
+
+<script language="JavaScript" type="text/javascript">var s_account = "spreadshirt-eu";</script>
+<script language="JavaScript" type="text/javascript" src="/Public/Common/Js/AppMeasurement_0cab6660bf81ce1568e8f0604fd996d2.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+s.cookieDomain = ".spreadshirt.fr";
+s.trackingServer = "analytics.spreadshirt.fr";
+s.trackingServerSecure = "sanalytics.spreadshirt.fr";
+s.lang = "fr";
+s.linkInternalFilters="javascript:,.spreadshirt.com,.spreadshirt.net," + s.cookieDomain;
+
+if (getCookieValue('cdn_h_referer') == null) {
+    reg = new RegExp('^(http|https):\/\/[a-zA-Z0-9._\-]+'+s.cookieDomain.replace(/[.]/g, '\\.'), '');
+    if(document.referrer.match(reg) == null){
+        createCookie('cdn_h_referer', document.referrer, s.cookieDomain, 1);
+    }
+}s.server = "812349.spreadshirt.net"
+s.currencyCode = "EUR"
+s.prop32 = "shop"
+s.eVar41 = "shop"
+s.eVar13 = "classic_compact - classic - 1/828/structure.css"
+s.prop25 = "classic_compact - classic - 1/828/structure.css"
+s.eVar8 = "not logged in"
+s.campaign = ""
+s.eVar7 = "u"
+s.prop29 = "fr - FR - Shop - 812349 - Article Index - page:1 - title:L%27échoppe du Parti Pirate"
+s.pageName = "Article Index"
+s.eVar44 = "fr-Article Index"
+s.channel = "Shops - Standard"
+s.prop1 = "Shops - 812349 - echoppe - L%27échoppe du Parti Pirate - Standard"
+s.prop31 = "Shops - Standard"
+s.eVar52 = "812349"
+if('undefined' != typeof confomatLoadStatus) {
+    if(confomatLoadStatus == 'loaded') {
+        if('undefined' == typeof s.events || s.events == "") {
+            s.events="event1";
+        } else {
+            s.events = s.events + ",event1";
+        }
+    }else if(confomatLoadStatus == 'updaterLoaded') {
+        s.eVar39 = "Flash Updater loaded";
+    } else {
+        s.eVar39 = "Flash not installed/not updatable";
+    }
+}
+
+if (window.appendToPageName) {
+    s.pageName += window.appendToPageName;
+    window.appendToPageName = null;
+}
+//--></script><script language="JavaScript" type="text/javascript" defer="defer"><!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/if (window.appendToPageName) {
+    s.pageName += window.appendToPageName;
+    window.appendToPageName = null;
+}var s_code=s.t();if(s_code)document.write(s_code)
+//if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><div><img src="https://sanalytics.spreadshirt.fr/b/ss/spreadshirt-eu/1/H.21-NS/0" height="1" width="1" alt="" /></div></noscript>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-24747471-8']);
+_gaq.push(['_gat._anonymizeIp']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<script type="text/javascript">
+    document.getElementsByTagName('body')[0].className += ' mvc ';
+
+    var updatePageUrl = "https://echoppe.spreadshirt.fr/shop/updatePage/focus/Index";
+    updateShopPage(updatePageUrl);
+
+</script>
+</div>
+</div>
+
+
+<!-- Inclure ici tout ce qu'il y a au dessus (attention au header) -->
+
+{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-echoppe" premium=0 %}

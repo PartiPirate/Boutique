@@ -13,9 +13,26 @@ facebook_image_url: ""
 <div class="page-header">
   <h1>Dans le header</h1>
 </div>
-<p><a href="http://echoppe.spreadshirt.fr/">Boutique standard</a> : </p>
-<pre>{% highlight html %}{% include navbar.html baseUrl="https://boutique.partipirate.org/" page="spreadshirt-echoppe" %}{% endhighlight %}</pre>
-<p><a href="http://partipirate.spreadshirt.fr">Boutique premium</a> : </p>
-<pre>{% highlight html %}{% include navbar.html baseUrl="https://boutique.partipirate.org/" page="spreadshirt-partipirate" %}{% endhighlight %}</pre>
-<pre>
-</pre>
+<h2>Tests</h2>
+<ul>
+	<li><a href="test-echoppe.html">Boutique</a></li>
+	<li><a href="test-partipirate.html">Premium</a></li>
+</ul>
+<h2>Boutique standard</h2>
+<p><a href="http://echoppe.spreadshirt.fr/">Header</a> : </p>
+<pre>{% highlight html %}
+	{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-echoppe" premium=0 %}
+{% endhighlight %}</pre>
+<p><a href="http://echoppe.spreadshirt.fr/">Footer</a> : </p>
+<pre>{% highlight html %}
+	{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-echoppe" premium=0 %}
+{% endhighlight %}</pre>
+<h2>Boutique premium</h2>
+<p><a href="http://partipirate.spreadshirt.fr">Header</a> : </p>
+<pre>{% highlight html %}
+	{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-partipirate" premium=1 %}
+{% endhighlight %}</pre>
+<p><a href="http://echoppe.spreadshirt.fr/">Footer</a> : </p>
+<pre>{% highlight html %}
+	{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-partipirate" premium=1 %}
+{% endhighlight %}</pre>

@@ -1,0 +1,846 @@
+---
+layout: none
+---
+{% capture head %}{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-partipirate" premium=1 %}{% endcapture %}
+{{ head | replace_first:'<head>','<head><title>(TEST) Boutique du Parti Pirate</title><meta http-equiv="content-type" content="text/xhtml; charset=utf-8" /><base href="https://partipirate.spreadshirt.fr/" /><link rel="stylesheet" href="https://image.spreadshirtmedia.net/Public/Shop/Styles-packaged/shop_common_38e224e8c0acb4041454af228df9da60.css" type="text/css" media="screen" /><script type="text/javascript" src="https://image.spreadshirtmedia.net/Public/Shop/Js-packaged/shop_d84800b2b013d37fe33b22331ebdcfc0.js"></script><script type="text/javascript">var AjaxUrl = "https://partipirate.spreadshirt.fr/fr/FR/Ajax/";var AjaxShopIdentifier = "partipirate";var switchingColors = false;</script><!--[if lt IE 7]><script type="text/javascript" src="https://image.spreadshirtmedia.net/Public/Shop/Js/transparencyFix.js"></script><![endif]-->' }}
+
+
+<!-- Inclure ici tout ce qu'il y a en dessous (attention au footer) -->
+
+<noscript><p class="message pending nojs">Cette page nécessite l'activation de Javascript.</p></noscript>
+
+<div id="main" class="container checkout2">
+<div id="headerUserInformation" style="visibility: hidden">
+<ul class="left">
+<li id="userDisable"><strong>Bienvenue.&nbsp;</strong><a href="https://partipirate.spreadshirt.fr/shop/logon" title="Se connecter à la boutique.">Se connecter à la boutique.</a></li>
+<li id="userEnable" style="display: none;"><strong>Bonjour&nbsp;<span id="userName"></span></strong></li>
+<li id="userLogout" style="display: none;"><a href="http://partipirate.spreadshirt.fr/shop/logout" title="Déconnexion">Déconnexion</a></li>
+<li id="userChart">
+<a href="https://partipirate.spreadshirt.fr/shop/basket" class="bntBasket" title="Panier">Panier</a>
+<strong>&nbsp;(<span id="shopBasketCount">0</span>&nbsp;article (s)&nbsp;:&nbsp;<span id="shopBasketPrice"></span>)</strong>
+</li>
+</ul>
+<ul class="right">
+<li id="userHelp"><a href="javascript:popUp('http://partipirate.spreadshirt.fr/shop/help/index/Popup/Show', '', 'width=680, height=700, scrollbars=1');" title="Aide">
+Aide</a>
+</li>
+<li id="userLanguages">
+<select name="headerLanguage" onchange="jumpMenu('self', this, 0);">
+<option value="https://partipirate.spreadshirt.fr/" selected="selected">Français</option><option value="https://partipirate.spreadshirt.fr/it">Italiano</option><option value="https://partipirate.spreadshirt.fr/nl">Nederlands</option><option value="https://partipirate.spreadshirt.fr/es">Español</option><option value="https://partipirate.spreadshirt.fr/en">English</option><option value="https://partipirate.spreadshirt.fr/de">Deutsch</option>
+</select>
+</li>
+<li id="sslWrapper">
+<div id="ssl">
+<a href="javascript:popUp('https://partipirate.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/9#jumpto44', 'SSL', 'width=868, height=560,top=150,left=450,scrollbars=1');" title="SSL fermé">SSL fermé</a>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="banner"><a href="http://www.partipirate.org"><img src="https://image.spreadshirtmedia.net/users/6994000/6993199/1040183/img/1040183_20150329192848.png" alt="" /></a></div>
+
+
+
+
+
+<div id="content">
+<div id="cookieErrorMessage" style="display: none;">
+<br class="clearfix"/>
+<br/>
+<p class="message error">
+<a href="#">Cette boutique a besoin de cookies pour fonctionner correctement. Activer les cookies.</a>
+
+</p>
+</div>
+<div id="cookieSuccessMessage" style="display: none;">
+<br class="clearfix"/>
+<br/>
+<p class="message success">
+Les options ont bien été modifiées. Bon shopping !
+
+</p>
+</div>
+<script type="text/javascript">
+(function ($) {
+if (!document.cookie) {
+var $cookieErrorMessage = $('cookieErrorMessage'),
+links = $cookieErrorMessage.select('a'),
+$cookieErrorMessageLink,
+$cookieSuccessMessage = $('cookieSuccessMessage');
+if(links.length) {
+$cookieErrorMessageLink = links.pop();
+} else {
+$cookieErrorMessageLink = $cookieErrorMessage;
+}
+$cookieErrorMessage.show();
+$cookieErrorMessageLink.observe('click', function (e) {
+e.preventDefault && e.preventDefault();
+var cookieWindow = window.open("/shop/cookie?Popup=Show", "Cookies", "width=300,height=400,left=100,top=200");
+cookieWindow.focus();
+cookieWindow.handleSuccess = function(){
+cookieWindow.close();
+$cookieErrorMessage.hide();
+$cookieSuccessMessage.show();
+};
+return false;
+});
+}
+})($);
+</script><a name=""></a><script type="text/javascript" src="https://image.spreadshirtmedia.net/Public/Confomat/Js-packaged/confomat7_ede0710940cb68cbbbae84682c0f2151.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var ajaxBaseUrl = '/fr/FR/Ajax';
+var noFlashContent = '<div class="grid_10 alpha omega" id="no_flash">'
++'<div class="grid_6">'
++'<h1>Please Update your Flash Player</h1>'
++'<p>In order to use all of the functions in our T-Shirt Designer, you need to have the latest version of the Flash Player. </p>'
++'<a href="http://get.adobe.com/flashplayer/" target="_blank" id="download_flash_player" class="button prio1 large right gap_down">Download Flash Player Now</a>'
++'<hr class="dashed_bottom">'
++'<h1>Continue to Spreadshirt Marketplace</h1>'
++'<p>Visit the Spreadshirt Marketplace where you will find custom t-shirts, hoodies, accessories and more – all designed by our designer community. </p>'
++'<div class="clear gap_down_medium">'
++'<a href="http://www.spreadshirt.fr/tee-shirt-C4408/article/8354329">'
++'<img src="http://cache.spreadshirt.net/image-server/v1/compositions/112752705/views/1,width=130,height=130,appearanceId=92/Khaki-gruen-darth-vader-vs-pod-T-Shirts.jpg" class="border_solid offset_right" alt="Darth Vader vs iPod T-shirt"></a>'
++'<a href="http://www.spreadshirt.fr/tee-shirt-C4408/article/18058035">'
++'<img src="http://cache.spreadshirt.net/image-server/v1/products/24762433/views/1,width=130,height=130/life-t-shirts.png" class="border_solid offset_right" alt="Life-T-shirt" style="background-color:#FFFFFF;"></a>'
++'<a href="http://www.spreadshirt.fr/tee-shirt-C4408/article/13218772">'
++'<img src="http://cache.spreadshirt.net/image-server/image/product/19379332/view/1/type/png/width/130/height/130/weiss-i-m-not-30-3c-t-shirts.png" class="border_solid offset_right" alt="I am not 30 T-shirt"></a>'
++'<a href="http://www.spreadshirt.fr/tee-shirt-C4408/article/12267433">'
++'<img src="http://cache.spreadshirt.net/image-server/image/product/17967938/view/1/type/png/width/130/height/130/divablau-you-rock-t-shirts.png" class="border_solid" alt="Divablau You Rock T-shirt"></a>'
++'</div>'
++'<a href="http://www.spreadshirt.fr/cadeaux-best-sellers-C4407" id="go_to_marketplace" class="button prio1 large right gap_down">Visit Spreadshirt’s Marketplace</a>'
++'</div>'
++'</div>';
+function updateApplicationLoadtime(time){
+var loadTimeDiv = $('confoLoadtime');
+if(loadTimeDiv){
+loadTimeDiv.innerHTML = "Loadtime: "+time+" ms";
+}
+}
+function transferSessionToCanonicalDomain(){
+var targetHost = hostnameFromUri('https://www.spreadshirt.fr');
+var sourceHost = hostnameFromUri(window.location);
+var transferUrl = '';
+var transferPixel = '';
+if(sourceHost != targetHost && sessionCanBeTransferred(sourceHost, targetHost)){
+transferUrl = sessionTransferUrl(targetHost);
+transferPixel = document.createElement('img');
+transferPixel.src = transferUrl;
+transferPixel.width = 1;
+transferPixel.height = 1;
+transferPixel.border = 0;
+transferPixel.alt = '';
+document.body.appendChild(transferPixel);
+}
+}
+function moveFocusToConfomat(){
+if($('Confomat')){
+$('Confomat').focus();
+}
+}
+function onUserAuthenticated() {
+reloadLoginStatusAndBasket(ajaxBaseUrl + '/');
+}
+if (Event.observe) {
+Event.observe(window, 'load', moveFocusToConfomat);
+Event.observe(window, 'load', transferSessionToCanonicalDomain);
+}
+confomat.subscribe('applicationLoaded', updateApplicationLoadtime);
+confomat.subscribe('userLoggedIn', onUserAuthenticated);
+confomatContext.setCheckoutUrl('http://partipirate.spreadshirt.fr/shop/basket');
+confomatContext.setShippingDetailsUrl('http://partipirate.spreadshirt.fr/shop/info/shipping/Popup/Show');
+confomatContext.setTaxDetailsUrl('http://partipirate.spreadshirt.fr/shop/help/index/Popup/Show/categoryId/6#jumpto27');
+confomatContext.setProductUrlTemplate('http://partipirate.spreadshirt.fr/customize/product/[productId]/sb/[shareId]/view/[viewId]');
+confomatContext.setPopupLoadingIndicatorUrl('https://image.spreadshirtmedia.net/Public/Confomat/Html/loading.html');
+confomatContext.onBasketItemCreated = function (id, shop, productId, appearanceId, sizeId, quantity) {
+reloadBasket(ajaxBaseUrl+'/');
+};
+confomatContext.onBasketItemUpdated = function(id, shop, oldProductId, productId, appearanceId, sizeId, quantity)  {
+reloadBasket(ajaxBaseUrl+'/');
+};
+// deprecated in favor of designChanged event
+function currentDesign(designId){
+onDesignChanged(designId);
+}
+
+//]]>
+</script>
+<div id="noFlash"></div>
+<!-- Tablomat -->
+<iframe src="about:blank" frameborder="0" border="0" width="980" height="560"
+id="tablomat" style="display: none"></iframe>
+<script type="text/javascript" src="/Public/Confomat8/js/confomat8.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var confomatLoadStatus;
+(function() {
+var CNG = "CNG",
+TABLOMAT = "Tablomat",
+NO_FLASH = "NoFlash",
+DEFAULT_DESIGNER;
+// Version of Flash required
+var requiredMajorVersion = 10,
+requiredMinorVersion = 0,
+requiredRevision = 0,
+parameter = {},
+locale = "fr_FR",
+match,
+search = window.location.search.replace(/^\?/, "");
+var possibleDeeplinks = [
+"designUrl",
+"designId",
+"designColor1",
+"designColor2",
+"designColor3",
+"designColorRgb1",
+"designColorRgb2",
+"designColorRgb3",
+// product
+"articleId",
+"productId",
+"appearanceId",
+"sizeId",
+"viewId",
+"productTypeId",
+"tx1",
+"tx2",
+"tx3",
+"textColorRgb",
+"textColor",
+// independent
+"departmentId",
+"productTypeCategoryId",
+"designCategoryId",
+"designSearch",
+"mode",
+"panel"
+];
+function queryStringToObject(query){
+var ret = {};
+query = query.split("&");
+for (var i = 0; i < query.length; i++) {
+match = /^([^=]+)(?:=(.*))?/.exec(query[i]);
+if (match) {
+ret[decodeURIComponent(match[1])] = decodeURIComponent(match[2]);
+}
+}
+return ret;
+}
+function filterDeeplinkParameter(parameter){
+var ret = {};
+for(var k in parameter){
+if(parameter.hasOwnProperty(k) && possibleDeeplinks.indexOf(k) > -1){
+ret[k] = parameter[k];
+}
+}
+return ret;
+}
+parameter = queryStringToObject(search);
+// Version check for the Flash Player that has the ability to start Player Product Install (6.0r65)
+var hasProductInstall = DetectFlashVer(6, 0, 65);
+// Version check based upon the values defined in globals
+var hasRequestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+var mode = "partner";
+var shopId = "1040183";
+var isD2C = (mode.toLowerCase() === "d2c");
+var isPartner = (mode.toLowerCase() === "partner");
+var useTablomatAsDefault = "true";
+var isLinux = navigator && (/linux/i.test(navigator.platform || "") ||
+(/x11/i.test(navigator.appVersion || "")) ||
+(/linux/i.test(navigator.appVersion || ""))
+);
+var isSafari = /safari/i.test(navigator.userAgent) && !/chrome/i.test(navigator.userAgent);
+DEFAULT_DESIGNER = ((isSafari || isLinux) && isD2C) ? TABLOMAT : CNG;
+if (isD2C && useTablomatAsDefault == "true") {
+DEFAULT_DESIGNER = TABLOMAT;
+}
+var designerLoaded = false,
+bootstrapDesigner = parameter["designer"] || window["bootstrapDesigner"] || DEFAULT_DESIGNER,
+bootstrapDesignerShopId = window["bootstrapDesignerShopId"],
+bootstrapTablomatVersion = window["bootstrapTablomatVersion"];
+var supportsCNG = (hasProductInstall && hasRequestedVersion);
+if (!supportsCNG) {
+// NO FLASH support -> fallback to Tablomat
+bootstrapDesigner = TABLOMAT;
+}
+if (bootstrapDesigner == TABLOMAT) {
+// check if tablomat is supported and fall back to CNG or to NO FLASH
+if (!supportsSvg()) {
+// browser < IE9 -> no SVG support
+bootstrapDesigner = supportsCNG ? CNG : NO_FLASH;
+}
+}
+window.appendToPageName = "|" + bootstrapDesigner;
+if (bootstrapDesigner === CNG) {
+bootStrapCNG();
+} else if (bootstrapDesigner === TABLOMAT) {
+if(isPartner){
+bootStrapTablomatForPartner();
+} else {
+bootStrapTablomat();
+}
+} else if (bootstrapDesigner === NO_FLASH) {
+confomatLoadStatus = 'noflash';
+var noFlash = document.getElementById("noFlash");
+if (noFlash) {
+noFlash.innerHTML = noFlashContent;
+}
+} else {
+// wait until document content is loaded or document is load
+addListener(document, "DOMContentLoaded", loaded);
+addListener(window, "load", loaded);
+}
+function loaded() {
+// default is CNG
+//            bootStrapCNG();
+}
+function addListener(target, eventName, listener) {
+if (target.addEventListener) {
+target.addEventListener(eventName, listener, false);
+} else {
+target.attachEvent("on" + eventName, listener);
+}
+}
+function supportsSvg() {
+var div = document.createElement('div');
+div.innerHTML = '<svg/>';
+return (div.firstChild && div.firstChild.namespaceURI) == 'http://www.w3.org/2000/svg';
+}
+function bootStrapCNG() {
+if (designerLoaded) {
+return;
+}
+designerLoaded = true;
+// overwrite onBasketItemCreated to send optimizely event
+var originalOnBasketItemCreate = window.onBasketItemCreated;
+window.onBasketItemCreated = function() {
+var optimizely = window.optimizely;
+if (optimizely && optimizely.trackEvent) {
+// ok cool, we found the optimizely object
+optimizely.trackEvent("AddToBasket");
+}
+if (originalOnBasketItemCreate) {
+// call original function with all parameters
+originalOnBasketItemCreate.apply(this, Array.prototype.slice.call(arguments));
+}
+};
+if (hasProductInstall && !hasRequestedVersion) {
+confomatLoadStatus = 'updaterLoaded';
+// DO NOT MODIFY THE FOLLOWING FOUR LINES
+// Location visited after installation is complete if installation is required
+var MMPlayerType = (isIE == true) ? "ActiveX" : "PlugIn";
+var MMredirectURL = window.location;
+document.title = document.title.slice(0, 47) + " - Flash Player Installation";
+var MMdoctitle = document.title;
+AC_FL_RunContent(
+"src", "https://image.spreadshirtmedia.net/Public/Common/Js/playerProductInstall",
+"FlashVars", "MMredirectURL=" + MMredirectURL + '&MMplayerType=' + MMPlayerType + '&MMdoctitle=' + MMdoctitle + "",
+"width", "980",
+"height", "560",
+"align", "middle",
+"id", "Confomat",
+"quality", "high",
+"bgcolor", "#ffffff",
+"name", "Confomat",
+"allowScriptAccess", "always",
+"type", "application/x-shockwave-flash",
+"pluginspage", "http://www.adobe.com/go/getflashplayer"
+);
+} else if (hasRequestedVersion) {
+var isWindows = navigator && navigator.oscpu && /windows/i.test(navigator.oscpu); //helper, do not use window for windows, firefox 20+
+var isFirefox = navigator && navigator.userAgent && /firefox/i.test(navigator.userAgent) && !isWindows;
+var windowMode = (isLinux || isFirefox) ? "window" : "opaque";
+confomatLoadStatus = 'loaded';
+// if we've detected an acceptable version
+// embed the Flash Content SWF when all tests are passed
+var flashVars = "locale=fr_FR&endPoint=https%3A%2F%2Fwww.spreadshirt.fr%2Fapi&imageServer=https%3A%2F%2Fimage.spreadshirtmedia.net%2Fimage-server&resources=http%3A%2F%2Fimage.spreadshirtmedia.net%2Fcache%2Fxml%2Flanguages&shopId=1040183&mode=partner&opossumBaseUrl=http%3A%2F%2Fwww.spreadshirt.fr%2Ffr%2FFR%2FAjax&opossumBaseUrlSecure=https%3A%2F%2Fwww.spreadshirt.fr%2Ffr%2FFR%2FAjax&editBasketItemBaseUrl=http%3A%2F%2Fpartipirate.spreadshirt.fr%2Fcustomize&originId=8&";
+if (bootstrapDesignerShopId && !isNaN(bootstrapDesignerShopId)) {
+// replace shopId from flashVars with the one passed via optimizely
+flashVars = flashVars.replace(/\bshopId=\d+/, "shopId=" + bootstrapDesignerShopId);
+}
+AC_FL_RunContent(
+"src", "https://image.spreadshirtmedia.net/Public/Confomat/Swf/confomat-7.44.4",
+"FlashVars", flashVars,
+"width", "980",
+"height", "560",
+"align", "middle",
+"id", "Confomat",
+"quality", "high",
+"bgcolor", "#ffffff",
+"wmode", windowMode,
+"name", "Confomat",
+"allowScriptAccess", "always",
+"type", "application/x-shockwave-flash",
+"pluginspage", "http://www.adobe.com/go/getflashplayer"
+);
+}
+}
+function bootStrapTablomat() {
+if (designerLoaded) {
+return;
+}
+designerLoaded = true;
+(function (window, document) {
+var height = Math.max(window.innerHeight - 120, 560);
+var iFrame = document.getElementById("tablomat");
+var iFrameUrl = "//www.spreadshirt.fr/fr/FR/Tablomat/Index/d2c";
+if (bootstrapTablomatVersion) {
+iFrameUrl += "?version=" + bootstrapTablomatVersion;
+}
+iFrame.setAttribute("src", iFrameUrl);
+iFrame.setAttribute("height", height);
+iFrame.style.display = "inline";
+var confomat8Interface = new Confomat();
+window["confomat"] = confomat8Interface;
+iFrame.onload = function () {
+var contentWindow = iFrame.contentWindow,
+rAppid = contentWindow.rAppid,
+version = bootstrapTablomatVersion || contentWindow.tablomat.version,
+parameter = contentWindow.tablomat.parameter,
+location = window.location;
+if (!rAppid) {
+return;
+}
+// pass omniture to iframe
+contentWindow.s = window.s;
+// pass optimizely to iframe
+contentWindow.optimizely = window.optimizely;
+shopId = bootstrapDesignerShopId || shopId;
+parameter.context = "shop";
+parameter.contextId = shopId;
+parameter.platform = "EU";
+parameter.imageServerEndPoint = "/image-server/v1";
+parameter.basketImplementation = {
+addBasketItem: function (element, quantity, callback) {
+try {
+var product = element.getProduct(),
+price = product.price();
+var basketItem = {
+"description": product.get("productType.name"),
+"quantity": quantity,
+"element": {
+"type": "sprd:product",
+"properties": [
+{
+"key": "sizeLabel",
+"value": element.get("size.name")
+},
+{
+"key": "appearance",
+"value": element.get("appearance.id")
+},
+{
+"key": "appearanceLabel",
+"value": element.get("appearance.name")
+},
+{
+"key": "appearanceLink",
+"value": "/image-server/v1/appearances/" + element.get("appearance.id")
+},
+{
+"key": "defaultView",
+"value": product.get("view.id")
+},
+{
+"key": "productType",
+"value": product.get("productType.id")
+},
+{
+"key": "size",
+"value": element.get("size.id")
+}
+],
+"id": product.get("id"),
+"href": product.get("href")
+},
+"links": [
+{
+"type": "edit",
+"href": location.href + "/product/" + product.get("id")
+}
+],
+"shop": {
+"id": shopId
+},
+"origin": {
+"id": "15"
+},
+"discountable": product.get("productType.discountSupported"),
+"priceItem": {
+"vatExcluded": price.get("vatIncluded"),
+"vatIncluded": price.get("vatIncluded"),
+"vat": 0,
+"currency": {
+"id": price.get("currency.id"),
+"href": price.get("currency.href")
+}
+},
+"price": {
+"vatExcluded": price.get("vatIncluded"),
+"vatIncluded": price.get("vatIncluded"),
+"vat": 0,
+"currency": {
+"id": price.get("currency.id"),
+"href": price.get("currency.href")
+}
+}
+};
+window.sprd.basket.addBasketItem(basketItem, function (err) {
+// FIXME: remove next line and figure out why addBasketItem returns an error
+err = null;
+callback && callback(err);
+});
+} catch (e) {
+callback && callback(e);
+}
+}
+};
+rAppid.bootStrap("tablomat/Tablomat.xml", null, parameter, {
+baseUrl: "/Public/Tablomat/build/" + version,
+loadConfiguration: "config.json"
+}, function (err, stage) {
+var preLoader = contentWindow.preloader;
+preLoader && preLoader.hide();
+if (err) {
+preLoader && preLoader.showError(err);
+} else if (stage) {
+stage && stage.$bus && stage.$bus.bind("Tablomat.goToCheckout", function () {
+window.location = "/-C2001/Checkout/Basket/index";
+});
+confomat8Interface._init(stage);
+window.tablomat = stage.$el;
+}
+});
+};
+})(window, document);
+}
+function bootStrapTablomatForPartner(){
+var hostname = window.location.hostname.split(".");
+hostname[0] = "www";
+hostname = hostname.join(".");
+var queryString = "locale=fr_FR&endPoint=https%3A%2F%2Fwww.spreadshirt.fr%2Fapi&imageServer=https%3A%2F%2Fimage.spreadshirtmedia.net%2Fimage-server&resources=http%3A%2F%2Fimage.spreadshirtmedia.net%2Fcache%2Fxml%2Flanguages&shopId=1040183&mode=partner&opossumBaseUrl=http%3A%2F%2Fwww.spreadshirt.fr%2Ffr%2FFR%2FAjax&opossumBaseUrlSecure=https%3A%2F%2Fwww.spreadshirt.fr%2Ffr%2FFR%2FAjax&editBasketItemBaseUrl=http%3A%2F%2Fpartipirate.spreadshirt.fr%2Fcustomize&originId=8&";
+var config = filterDeeplinkParameter(queryStringToObject(queryString) || {});
+config.shopId = shopId;
+config.target = document.getElementById("noFlash");
+config.url = "//" + hostname + "/"+locale.replace("_","/")+"/Tablomat/Index/external";
+config.height = 560;
+config.onCheckout = function (callback){
+window.location = 'http://partipirate.spreadshirt.fr/shop/basket';
+callback && callback();
+};
+config.addToBasket = function (item, callback) {
+new Ajax.Request(ajaxBaseUrl + "/Basket/addtobasket/nogui/1", {
+method: 'post',
+parameters: {
+editBasketItemBaseUrl: '',
+productId: item.product.id,
+quantity: item.quantity,
+originId: "16", // 16 is for partners
+shopId: shopId,
+sizeId: item.size.id,
+appearanceId: item.appearance.id,
+originContext: "designer"
+},
+onSuccess: function (xhr) {
+var err = null;
+if(xhr.responseText == "0"){
+window.onBasketItemCreated();
+} else {
+err = true;
+}
+callback && callback(err);
+},
+onError: function () {
+// TODO:
+callback && callback(true);
+}
+});
+};
+config.onProductTypeChange = function(productTypeId){
+confomat && confomat.fire("producttypeChange", productTypeId);
+};
+var sprdScript = document.createElement("script");
+sprdScript.src = "//spreadshirt.github.io/apps/spreadshirt.min.js";
+sprdScript.onload = function(){
+spreadshirt.create("tablomat", config);
+};
+document.body.appendChild(sprdScript);
+}
+})();
+//]]>
+</script>
+<noscript>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+id="Confomat" width="980" height="560"
+codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+<param name="movie" value="https://image.spreadshirtmedia.net/Public/Confomat/Swf/confomat-7.44.4.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="allowScriptAccess" value="sameDomain" />
+<embed src="https://image.spreadshirtmedia.net/Public/Confomat/Swf/confomat-7.44.4.swf" bgcolor="#ffffff"
+width="980" height="560" name="Confomat" align="middle"
+FlashVars="locale=fr_FR&amp;endPoint=https%3A%2F%2Fwww.spreadshirt.fr%2Fapi&amp;imageServer=https%3A%2F%2Fimage.spreadshirtmedia.net%2Fimage-server&amp;resources=http%3A%2F%2Fimage.spreadshirtmedia.net%2Fcache%2Fxml%2Flanguages&amp;shopId=1040183&amp;mode=partner&amp;opossumBaseUrl=http%3A%2F%2Fwww.spreadshirt.fr%2Ffr%2FFR%2FAjax&amp;opossumBaseUrlSecure=https%3A%2F%2Fwww.spreadshirt.fr%2Ffr%2FFR%2FAjax&amp;editBasketItemBaseUrl=http%3A%2F%2Fpartipirate.spreadshirt.fr%2Fcustomize&amp;originId=8&amp;"
+play="true"
+loop="false"
+quality="high"
+allowScriptAccess="always"
+type="application/x-shockwave-flash"
+pluginspage="http://www.adobe.com/go/getflashplayer">
+</embed>
+</object>
+</noscript>
+
+<script type="text/javascript">
+function openProduct(productId) {
+confomat.loadProduct(productId);
+}
+</script>
+<div id="producttype_tabbox">
+<script type="text/javascript">
+// <![CDATA[
+function onChangeProductTypeImplementation(producttype) {
+url = 'https://partipirate.spreadshirt.fr/fr/FR/Ajax/Widgets/Producttype/type/tabbox/productTypeId/' + producttype;
+new Ajax.Updater('producttype_tabbox', url, { method: 'get' });
+}
+if(typeof confomat != 'undefined' && confomat.subscribe != undefined){
+confomat.subscribe('producttypeChange', onChangeProductTypeImplementation);
+}
+// ]]>
+</script>
+<div id="confo_info1" style="">
+<ul class="tab-navi cosy clearfix border_bottom_color_1">
+<li id="tab-item-1-1" class="current bg_color_3"><a class="font_color_7 border_color_1" href="javascript:show_hide_confo_info('confo_info1')">Photos du produit</a></li>
+<li id="tab-item-1-2" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info2')" rel="track[event:ProducttypeInfoTab - Sizes]">Tailles</a></li>
+<li id="tab-item-1-3" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info3')" rel="track[event:ProducttypeInfoTab - Description]">Description</a></li>
+<li id="tab-item-1-4" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info4')" rel="track[event:ProducttypeInfoTab - Printtypes]">Technique d'impression</a></li>
+</ul>
+<div class="tabBoxContent">
+<img src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/3/variants/detail,width=560,height=150.png" alt=""/>
+</div>
+</div>
+<div id="confo_info2" style="display:none;">
+<ul class="tab-navi cosy clearfix border_bottom_color_1">
+<li id="tab-item-2-1" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info1')" rel="track[event:ProducttypeInfoTab - Details]">Photos du produit</a></li>
+<li id="tab-item-2-2" class="current bg_color_3"><a class="font_color_7 border_color_1" href="javascript:show_hide_confo_info('confo_info2')">Tailles</a></li>
+<li id="tab-item-2-3" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info3')" rel="track[event:ProducttypeInfoTab - Description]">Description</a></li>
+<li id="tab-item-2-4" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info4')" rel="track[event:ProducttypeInfoTab - Printtypes]">Technique d'impression</a></li>
+</ul>
+<div class="tabBoxContent">
+<img class="small-gap-right" src="https://image.spreadshirtmedia.net/image-server/v1/productTypes/3/variants/size,width=130,height=130.png" alt=""/>
+<p><script type="text/javascript">
+// <![CDATA[
+function modelThumbnailMouseover(src){
+ids = src.id.split("_");
+size_id = ids[1];
+model_id = ids[2];
+if(allModelsMedium.length > 0){
+displayurl = allModelsMedium[model_id][size_id];
+mediumimage = document.getElementById('model_medium_image');
+mediumimage.src = displayurl;
+doIterate = false;
+}
+}
+function modelThumbnailMouseout(src){
+doIterate = true;
+}
+// ]]>
+</script>
+<table class="assort_sizes full_width">
+<thead>
+<tr>
+<th>Taille</th>
+<th>S</th><th>M</th><th>L</th><th>XL</th><th>XXL</th><th>3XL</th>
+</tr>
+
+</thead>
+<tbody>
+<tr >
+<td>Mesure A (cm)</td>
+<td>
+68,0
+</td><td>
+72,0
+</td><td>
+74,0
+</td><td>
+75,0
+</td><td>
+78,0
+</td><td>
+
+</td>
+</tr><tr class="even">
+<td>Mesure B (cm)</td>
+<td>
+49,0
+</td><td>
+52,0
+</td><td>
+56,0
+</td><td>
+60,0
+</td><td>
+61,0
+</td><td>
+
+</td>
+</tr>
+</tbody>
+</table></p>
+</div>
+</div>
+<div id="confo_info3" style="display:none;">
+<ul class="tab-navi cosy clearfix border_bottom_color_1">
+<li id="tab-item-3-1" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info1')" rel="track[event:ProducttypeInfoTab - Details]">Photos du produit</a></li>
+<li id="tab-item-3-2" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info2')" rel="track[event:ProducttypeInfoTab - Sizes]">Tailles</a></li>
+<li id="tab-item-3-3" class="current bg_color_3"><a class="font_color_7 border_color_1" href="javascript:show_hide_confo_info('confo_info3')">Description</a></li>
+<li id="tab-item-3-4" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info4')" rel="track[event:ProducttypeInfoTab - Printtypes]">Technique d'impression</a></li>
+</ul>
+<div class="tabBoxContent">
+T-shirt à coupe classique composé de 100% coton. Le tissu a un grammage de 155g/m².
+</div>
+</div>
+<div id="confo_info4" style="display:none;">
+<ul class="tab-navi cosy clearfix border_bottom_color_1">
+<li id="tab-item-4-1" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info1')" rel="track[event:ProducttypeInfoTab - Details]">Photos du produit</a></li>
+<li id="tab-item-4-2" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info2')" rel="track[event:ProducttypeInfoTab - Sizes]">Tailles</a></li>
+<li id="tab-item-4-3" class="bg_color_4"><a class="headers-color border_color_1" href="javascript:show_hide_confo_info('confo_info3')" rel="track[event:ProducttypeInfoTab - Description]">Description</a></li>
+<li id="tab-item-4-4" class="current bg_color_3"><a class="font_color_7 border_color_1" href="javascript:show_hide_confo_info('confo_info4')">Technique d'impression</a></li>
+</ul>
+<div class="tabBoxContent">
+<p class="clear">
+<img src="//image.spreadshirtmedia.net/Public/Common/images/printtypes/flex.jpg" alt="Lisse (flexographie)" class="float-left-medium" />
+
+<strong>Lisse (flexographie)</strong>
+<ul>
+<li class="listMCECheckbox">une surface légèrement brillante et lisse au toucher</li>
+<li class="listMCECheckbox">très durable</li>
+<li class="listMCECheckbox">jusqu'à 3 couleurs différentes par motif</li>
+</ul>
+</p>
+<p class="clear">
+<img src="//image.spreadshirtmedia.net/Public/Common/images/printtypes/specialty.jpg" alt="Flexographie spéciale" class="float-left-medium" />
+
+<strong>Flexographie spéciale</strong>
+<ul>
+<li class="listMCECheckbox">une surface lisse et légèrement brillante</li>
+<li class="listMCECheckbox">très durable</li>
+<li class="listMCECheckbox">1 couleur par motif</li>
+</ul>
+</p>
+<p class="clear">
+<img src="//image.spreadshirtmedia.net/Public/Common/images/printtypes/flock.jpg" alt="Velours (flocage)" class="float-left-medium" />
+
+<strong>Velours (flocage)</strong>
+<ul>
+<li class="listMCECheckbox">un léger relief et un toucher similaire au velours</li>
+<li class="listMCECheckbox">très durable</li>
+<li class="listMCECheckbox">jusqu'à 3 couleurs différentes par motif</li>
+</ul>
+</p>
+<p class="clear">
+<img src="//image.spreadshirtmedia.net/Public/Common/images/printtypes/digi.jpg" alt="Impression numérique" class="float-left-medium" />
+
+<strong>Impression numérique</strong>
+<ul>
+<li class="listMCECheckbox">recommandée pour les images de plus de 3 couleurs (par ex. photos)</li>
+<li class="listMCECheckbox"></li>
+</ul>
+</p>
+
+</div>
+</div>
+</div><div id="menuFooter">
+<ul>
+<li><a href="javascript:popUp('https://partipirate.spreadshirt.fr/shop/terms-and-conditions/index/Popup/Show', '', 'width=680, height=700, scrollbars=1');" title="Termes et conditions">Termes et conditions</a></li><li><a href="javascript:popUp('https://partipirate.spreadshirt.fr/shop/imprint/index/Popup/Show', '', 'width=680, height=700, scrollbars=1');" title="Mentions légales">Mentions légales</a></li><li><a href="javascript:popUp('https://partipirate.spreadshirt.fr/shop/privacy/index/Popup/Show', '', 'width=680, height=700, scrollbars=1');" title="Protection privée">Protection privée</a></li><li><a href="javascript:popUp('https://partipirate.spreadshirt.fr/shop/copyright/index/Popup/Show', '', 'width=680, height=700, scrollbars=1');" title="Copyright">Copyright</a></li><li><a href="http://partipirate.spreadshirt.fr/shop/designs/feed" title="RSS" target="_blank">RSS</a></li><li><a href="javascript:popUp('https://partipirate.spreadshirt.fr/shop/help/index/Popup/Show', '', 'width=680, height=700, scrollbars=1');" title="Aide">Aide</a></li><li><a href="http://partipirate.spreadshirt.fr/shop/basket" title="Panier">Panier</a></li><li><a href="http://partipirate.spreadshirt.fr/shop/recommend" title="Envoyer à un ami">Envoyer à un ami</a></li>
+</ul>
+</div>
+
+<div class="ie-spacer-float-bug-fixer">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+<script language="JavaScript" type="text/javascript">var s_account = "spreadshirt-eu";</script>
+<script language="JavaScript" type="text/javascript" src="/Public/Common/Js/AppMeasurement_0cab6660bf81ce1568e8f0604fd996d2.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+s.cookieDomain = ".spreadshirt.fr";
+s.trackingServer = "analytics.spreadshirt.fr";
+s.trackingServerSecure = "sanalytics.spreadshirt.fr";
+s.lang = "fr";
+s.linkInternalFilters="javascript:,.spreadshirt.com,.spreadshirt.net," + s.cookieDomain;
+
+if (getCookieValue('cdn_h_referer') == null) {
+    reg = new RegExp('^(http|https):\/\/[a-zA-Z0-9._\-]+'+s.cookieDomain.replace(/[.]/g, '\\.'), '');
+    if(document.referrer.match(reg) == null){
+        createCookie('cdn_h_referer', document.referrer, s.cookieDomain, 1);
+    }
+}s.server = "1040183.spreadshirt.net"
+s.currencyCode = "EUR"
+s.prop32 = "shop"
+s.eVar41 = "shop"
+s.eVar13 = "classic_compact - confomat7 - 1/980/structure.css"
+s.prop25 = "classic_compact - confomat7 - 1/980/structure.css"
+s.eVar8 = "not logged in"
+s.campaign = ""
+s.eVar7 = "u"
+s.prop29 = "fr - FR - Shop - 1040183 - Article Index - "
+s.pageName = "Article Index"
+s.eVar44 = "fr-Article Index"
+s.channel = "Shops - Standard"
+s.prop1 = "Shops - 1040183 - partipirate - Boutique Parti Pirate - Standard"
+s.prop31 = "Shops - Standard"
+s.eVar52 = "1040183"
+if('undefined' != typeof confomatLoadStatus) {
+    if(confomatLoadStatus == 'loaded') {
+        if('undefined' == typeof s.events || s.events == "") {
+            s.events="event1";
+        } else {
+            s.events = s.events + ",event1";
+        }
+    }else if(confomatLoadStatus == 'updaterLoaded') {
+        s.eVar39 = "Flash Updater loaded";
+    } else {
+        s.eVar39 = "Flash not installed/not updatable";
+    }
+}
+
+if (window.appendToPageName) {
+    s.pageName += window.appendToPageName;
+    window.appendToPageName = null;
+}
+//--></script><script language="JavaScript" type="text/javascript" defer="defer"><!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/if (window.appendToPageName) {
+    s.pageName += window.appendToPageName;
+    window.appendToPageName = null;
+}var s_code=s.t();if(s_code)document.write(s_code)
+//if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><div><img src="https://sanalytics.spreadshirt.fr/b/ss/spreadshirt-eu/1/H.21-NS/0" height="1" width="1" alt="" /></div></noscript>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-24747471-8']);
+_gaq.push(['_gat._anonymizeIp']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_setAllowLinker', true]);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<script type="text/javascript">
+document.getElementsByTagName('body')[0].className += ' mvc ';
+var updatePageUrl = "https://partipirate.spreadshirt.fr/shop/updatePage/focus/Index";
+updateShopPage(updatePageUrl);
+</script>
+</div>
+</div>
+
+
+<!-- Inclure ici tout ce qu'il y a au dessus (attention au header) -->
+
+{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-partipirate" premium=1 %}

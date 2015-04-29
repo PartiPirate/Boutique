@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel='shortcut icon' type='image/x-icon' href="{{ include.baseUrl }}favicon.ico" />
+	<!--link rel="icon" type="image/gif" href="https://www.partipirate.org/squelettes/img/animated_favicon1.gif" >
+	<link rel="apple-touch-icon" href="https://www.partipirate.org/squelettes/img/apple-touch-icon.png"-->
+	<link rel="stylesheet" href="/Public/Shop/Styles/icons.css" type="text/css" />
+	<link rel="stylesheet" href="/Public/Shop/Styles/navigationset-3.css" type="text/css" />
+	<link rel="stylesheet" href="/Public/Shop/Styles/buttonset-3.css" type="text/css" />
+	<link rel="stylesheet" href="/Public/Shop/Styles/ibox.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/Public/Shop/Styles/1/828/structure.css" type="text/css" />
+	<link href="{{ include.baseUrl }}css/styles-spreadshirt.css" rel="stylesheet" />
+	<link rel="stylesheet" href="/users/6994000/6993199/812349/color.css" type="text/css" />
+	<link rel="stylesheet" href="/users/6994000/6993199/812349/shop.css" type="text/css" />
+</head>
+	<body>
+<div class="persopp">
+	{% capture navbar %}{% include navbar.html baseUrl=include.baseUrl page=include.page %}{% endcapture %}
+	{% capture oldImage %}{{ include.baseUrl }}img/logo.png{% endcapture %}
+	{{ navbar | replace_first:oldImage,'/users/6994000/6993199/812349/img/812349_logo.png' | replace_first:'<nav','<div' | replace_first:'</nav>','</div>' }}
+</div>

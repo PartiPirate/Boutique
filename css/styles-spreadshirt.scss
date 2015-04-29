@@ -1,0 +1,23 @@
+---
+---
+.persopp * {
+	clear: initial;
+	font-size: initial;
+	height: initial;
+	color: initial;
+	display: initial;
+	all: initial;
+}
+@import "font-awesome";	
+@import "fonts";
+.persopp {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #333333;
+	background-color: #fff;
+}
+.persopp {
+	@import "bootstrap";
+	@import "partipirate";
+}

@@ -1,0 +1,12 @@
+<div class="persopp">
+	<div class="container">
+	{% capture footer %}{% include footer.html baseUrl=include.baseUrl page=include.page %}{% endcapture %}
+	{{ footer | replace_first:'<footer','<div' | replace_first:'</footer>','</div>' }}
+	</div>
+{% if include.premium == 1 %}
+    <script src="{{ include.baseUrl }}js/jquery.min.js"></script>
+    <script src="{{ include.baseUrl }}js/bootstrap.min.js"></script>
+{% endif %}
+</div>
+</body>
+</html>
