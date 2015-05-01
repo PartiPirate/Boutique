@@ -21,18 +21,28 @@ facebook_image_url: ""
 <h2>Boutique standard</h2>
 <p><a href="http://echoppe.spreadshirt.fr/">Header</a> : </p>
 <pre>{% highlight html %}
-	{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-echoppe" premium=0 %}
+	{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-echoppe" %}
+	<!-- Inclure ici tout ce qu'il y a en dessous (attention au footer) -->
+
+	
 {% endhighlight %}</pre>
 <p><a href="http://echoppe.spreadshirt.fr/">Footer</a> : </p>
 <pre>{% highlight html %}
-	{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-echoppe" premium=0 %}
+
+	<!-- Inclure ici tout ce qu'il y a au dessus (attention au header) -->
+	{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-echoppe" %}
 {% endhighlight %}</pre>
 <h2>Boutique premium</h2>
 <p><a href="http://partipirate.spreadshirt.fr">Header</a> : </p>
 <pre>{% highlight html %}
-	{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-partipirate" premium=1 %}
+	{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-partipirate" %}
+	<!-- Inclure ici tout ce qu'il y a en dessous (attention au footer) -->
+
+
 {% endhighlight %}</pre>
 <p><a href="http://echoppe.spreadshirt.fr/">Footer</a> : </p>
 <pre>{% highlight html %}
-	{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-partipirate" premium=1 %}
+
+	<!-- Inclure ici tout ce qu'il y a au dessus (attention au header) -->
+	{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-partipirate" %}
 {% endhighlight %}</pre>

@@ -6,6 +6,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>{{ page.title }}{% if site.data.params.is_production != true %} - Préproduction{% endif %}</title>
   <link rel="icon" href="{{ include.baseUrl }}favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/gif" href="{{ include.baseUrl }}img/favicon_animated.gif" />
+  <link rel="apple-touch-icon" href="{{ include.baseUrl }}img/apple-touch-icon.png" />
 
   <link href="{{ include.baseUrl }}css/styles.css" rel="stylesheet" />
 
@@ -16,32 +18,32 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   <meta name="twitter:card" content="summary" />
-  {% if site.data.params.twitter_account != empty %}
+  {% if site.data.params.twitter_account != "" %}
     <meta name="twitter:site" content="{{ site.data.params.twitter_account }}" />
   {% endif %}
   <meta property="og:title" content="{{ page.title | replace:'"':"'" }}" />
   <meta property="og:locale" content="fr_FR" />
-  {% if page.description != empty %}
+  {% if page.description != "" %}
     <meta name="description" content="{{ page.description | replace:'"':"'" }}" />
     <meta property="og:description" content="{{ page.description | replace:'"':"'" }}" />
     <meta name="twitter:description" content="{{ page.description | replace:'"':"'" }}" />
-  {% else if content != empty %}
+  {% else if content != "" %}
     <meta name="description" content="{{ content | strip_html | truncatewords: 25 | replace:'"':"'" }}" /> 
     <meta property="og:description" content="{{ content | strip_html | truncatewords: 25 | replace:'"':"'" }}" />
     <meta name="twitter:description" content="{{ content | strip_html | truncatewords: 25 | replace:'"':"'" }}" />
   {% endif %}
   {% if site.data.params.url %}
     <meta property="og:url" content="{{ site.data.params.url }}{{ page.url | remove_first:'/' | remove_first:'index.html' }}" />
-    {% if page.facebook_image_url != empty %}<meta property="og:image" content="{{ site.data.params.url }}{{ page.facebook_image_url }}" />
-    {% elsif page.image_url != empty %}<meta property="og:image" content="{{ site.data.params.url }}{{ page.image_url }}" />
-    {% elsif site.data.params.facebook_image != empty %}<meta property="og:image" content="{{ site.data.params.url }}{{ site.data.params.facebook_image }}" />
+    {% if page.facebook_image_url != "" %}<meta property="og:image" content="{{ site.data.params.url }}{{ page.facebook_image_url }}" />
+    {% elsif page.image_url != "" %}<meta property="og:image" content="{{ site.data.params.url }}{{ page.image_url }}" />
+    {% elsif site.data.params.facebook_image != "" %}<meta property="og:image" content="{{ site.data.params.url }}{{ site.data.params.facebook_image }}" />
     {% endif %}
-    {% if page.twitter_image_url != empty %}<meta name="twitter:image" content="{{ site.data.params.url }}{{ page.twitter_image_url }}" />
-    {% elsif page.image_url != empty %}<meta name="twitter:image" content="{{ site.data.params.url }}{{ page.image_url }}" />
-    {% elsif site.data.params.twitter_image != empty %}<meta name="twitter:image" content="{{ site.data.params.url }}{{ site.data.params.twitter_image }}" />
+    {% if page.twitter_image_url != "" %}<meta name="twitter:image" content="{{ site.data.params.url }}{{ page.twitter_image_url }}" />
+    {% elsif page.image_url != "" %}<meta name="twitter:image" content="{{ site.data.params.url }}{{ page.image_url }}" />
+    {% elsif site.data.params.twitter_image != "" %}<meta name="twitter:image" content="{{ site.data.params.url }}{{ site.data.params.twitter_image }}" />
     {% endif %}
   {% endif %}
-  {% if site.data.params.siteName != empty %}
+  {% if site.data.params.siteName != "" %}
     <meta property="og:site_name" content="{{ site.data.params.siteName | replace:'"':"'" }}" />
   {% endif %}
 

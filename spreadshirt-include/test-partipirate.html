@@ -1,7 +1,7 @@
 ---
 layout: none
 ---
-{% capture head %}{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-partipirate" premium=1 %}{% endcapture %}
+{% capture head %}{% include spreadshirt-head.html baseUrl=site.data.params.url page="spreadshirt-partipirate" %}{% endcapture %}
 {{ head | replace_first:'<head>','<head><title>(TEST) Boutique du Parti Pirate</title><meta http-equiv="content-type" content="text/xhtml; charset=utf-8" /><base href="https://partipirate.spreadshirt.fr/" /><link rel="stylesheet" href="https://image.spreadshirtmedia.net/Public/Shop/Styles-packaged/shop_common_38e224e8c0acb4041454af228df9da60.css" type="text/css" media="screen" /><script type="text/javascript" src="https://image.spreadshirtmedia.net/Public/Shop/Js-packaged/shop_d84800b2b013d37fe33b22331ebdcfc0.js"></script><script type="text/javascript">var AjaxUrl = "https://partipirate.spreadshirt.fr/fr/FR/Ajax/";var AjaxShopIdentifier = "partipirate";var switchingColors = false;</script><!--[if lt IE 7]><script type="text/javascript" src="https://image.spreadshirtmedia.net/Public/Shop/Js/transparencyFix.js"></script><![endif]-->' }}
 
 
@@ -843,4 +843,4 @@ updateShopPage(updatePageUrl);
 
 <!-- Inclure ici tout ce qu'il y a au dessus (attention au header) -->
 
-{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-partipirate" premium=1 %}
+{% include spreadshirt-footer.html baseUrl=site.data.params.url page="spreadshirt-partipirate" %}

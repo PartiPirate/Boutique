@@ -1,12 +1,21 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
+      {% if include.no_js == 1 %}
+      <a href="{{ include.baseUrl }}" class="navbar-toggle collapsed">
+        <span class="sr-only">Sommaire</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      {% else %}
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Sommaire</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      {% endif %}
       <a class="navbar-brand" href="{{ include.baseUrl }}"><img src="{{ include.baseUrl }}img/logo.png" alt="Parti Pirate" class="img-responsive" width="175" /></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
@@ -15,6 +24,9 @@
         <li {% if include.page == "spreadshirt-echoppe" %}class="active"{% endif %}><a href="https://echoppe.spreadshirt.fr">Boutique</a></li>
         <li {% if include.page == "spreadshirt-partipirate" %}class="active"{% endif %}><a href="https://partipirate.spreadshirt.fr/">Produits à personnaliser</a></li>
         <li {% if page.url == "/diy.html" %}class="active"{% endif %}><a href="{{ include.baseUrl }}diy.html">Do It Yourself</a></li>
+        {% if include.no_js == 1 %}
+        <li><a href="{{ include.baseUrl }}">Divers <span class="caret"></span></a></li>
+        {% else %}
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Divers <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -23,6 +35,7 @@
             <li {% if page.url == "/licence.html" %}class="active"{% endif %}><a href="{{ include.baseUrl }}licence.html">Licence</a></li>
           </ul>
         </li>
+        {% endif %}
       </ul>
     </div><!--/.nav-collapse -->
     <div class="call-to-action">

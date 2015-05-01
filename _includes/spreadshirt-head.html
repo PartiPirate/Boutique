@@ -1,22 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel='shortcut icon' type='image/x-icon' href="{{ include.baseUrl }}favicon.ico" />
-	<!--link rel="icon" type="image/gif" href="https://www.partipirate.org/squelettes/img/animated_favicon1.gif" >
-	<link rel="apple-touch-icon" href="https://www.partipirate.org/squelettes/img/apple-touch-icon.png"-->
+	<link rel="icon" type="image/gif" href="{{ include.baseUrl }}img/favicon_animated.gif" />
+	<link rel="apple-touch-icon" href="{{ include.baseUrl }}img/apple-touch-icon.png" />
 	<link rel="stylesheet" href="/Public/Shop/Styles/icons.css" type="text/css" />
-	<link rel="stylesheet" href="/Public/Shop/Styles/navigationset-3.css" type="text/css" />
-	<link rel="stylesheet" href="/Public/Shop/Styles/buttonset-3.css" type="text/css" />
+	{% if include.page == 'spreadshirt-partipirate' %}
+		<link rel="stylesheet" href="/Public/Shop/Styles/navigationset-1.css" type="text/css" />
+		<link rel="stylesheet" href="/Public/Shop/Styles/buttonset-1.css" type="text/css" />
+	{% else %}
+		<link rel="stylesheet" href="/Public/Shop/Styles/navigationset-3.css" type="text/css" />
+		<link rel="stylesheet" href="/Public/Shop/Styles/buttonset-3.css" type="text/css" />
+	{% endif %}
 	<link rel="stylesheet" href="/Public/Shop/Styles/ibox.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="/Public/Shop/Styles/1/828/structure.css" type="text/css" />
+	<link rel="stylesheet" href="/Public/Shop/Styles/1/{% if include.page == 'spreadshirt-partipirate' %}980{% else %}828{% endif %}/structure.css" type="text/css" />
 	<link href="{{ include.baseUrl }}css/styles-spreadshirt.css" rel="stylesheet" />
-	<link rel="stylesheet" href="/users/6994000/6993199/812349/color.css" type="text/css" />
-	<link rel="stylesheet" href="/users/6994000/6993199/812349/shop.css" type="text/css" />
-</head>
+	{% if include.page == 'spreadshirt-partipirate' %}
+		<link rel="stylesheet" href="/users/6994000/6993199/1040183/color.css" type="text/css" />
+		<link rel="stylesheet" href="/users/6994000/6993199/1040183/shop.css" type="text/css" />
+	{% else %}
+		<link rel="stylesheet" href="/users/6994000/6993199/812349/color.css" type="text/css" />
+		<link rel="stylesheet" href="/users/6994000/6993199/812349/shop.css" type="text/css" />
+	{% endif %}
+	<meta name="twitter:card" content="summary" />
+	{% if site.data.params.twitter_account != "" %}
+		<meta name="twitter:site" content="{{ site.data.params.twitter_account }}" />
+	{% endif %}
+	<meta property="og:title" content="La boutique du Parti Pirate" />
+	<meta property="og:locale" content="fr_FR" />
+	{% capture description %}Achetez des goodies du Parti Pirate pour faire la promotion du parti auprès de vos relations. Fiers d'être des 'pirates', nous sommes avant tout de simples citoyens qui défendons le partage de la culture et de l’information. Cet accès libre et égal pour tous, la technologie le permet : seuls nous en séparent aujourd’hui quelques intérêts privés, commerciaux ou politiques.{% endcapture %}
+	<meta property="og:description" content="{{ description | replace:'"':"'" }}" />
+	<meta name="twitter:description" content="{{ description | replace:'"':"'" }}" />
+	<meta property="og:url" content="{{ include.baseUrl }}" />
+	<meta property="og:image" content="{{ include.baseUrl }}{{ site.data.params.facebook_image }}" />
+	<meta name="twitter:image" content="{{ include.baseUrl }}{{ site.data.params.twitter_image }}" />
+	{% if site.data.params.siteName != "" %}
+		<meta property="og:site_name" content="{{ site.data.params.siteName | replace:'"':"'" }}" />
+	{% endif %}
+	<meta property="og:type" content="website" />
 	<body>
 <div class="persopp">
-	{% capture navbar %}{% include navbar.html baseUrl=include.baseUrl page=include.page %}{% endcapture %}
+	{% capture navbar %}{% include navbar.html baseUrl=include.baseUrl page=include.page no_js=1 %}{% endcapture %}
 	{% capture oldImage %}{{ include.baseUrl }}img/logo.png{% endcapture %}
 	{{ navbar | replace_first:oldImage,'/users/6994000/6993199/812349/img/812349_logo.png' | replace_first:'<nav','<div' | replace_first:'</nav>','</div>' }}
 </div>

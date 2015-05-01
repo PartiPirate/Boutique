@@ -1,9 +1,9 @@
 # Mettre ici le nom du site (court)
 siteName: "Echoppe du Parti Pirate"
 # Mettre à true pour la production
-is_production: false
+is_production: true
 # Mettre l'url complète du site de production et finir par un /. ie: https://www.partipirate.org/
-url: http://php53.dev/PartiPirate/boutique/htdocs/
+url: https://boutique.partipirate.org/
 # Réseaux sociaux
 ## compte associé
 twitter_account: "@PartiPirate"
